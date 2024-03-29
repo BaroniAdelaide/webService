@@ -1,0 +1,201 @@
+CRITICAL - 2024-03-29 07:44:12 --> Error: Class "App\Controllers\PersonModel" not found
+in APPPATH\Controllers\Home.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 07:44:58 --> Error: Class "App\Models\personModel" not found
+in APPPATH\Controllers\Home.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 07:45:30 --> Error: Class "App\Models\personModel" not found
+in APPPATH\Controllers\Home.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 07:53:17 --> Error: Class "App\Models\PersonModel" not found
+in APPPATH\Controllers\Home.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 07:55:29 --> Error: Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+in APPPATH\Controllers\Home.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 08:05:24 --> ErrorException: Undefined variable $table
+in APPPATH\Models\PersonModel.php on line 10.
+ 1 APPPATH\Models\PersonModel.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $table', 'C:\\xampp\\htdocs\\webService\\app\\Models\\PersonModel.php', 10)
+ 2 SYSTEMPATH\BaseModel.php(344): App\Models\PersonModel->initialize()
+ 3 SYSTEMPATH\Model.php(157): CodeIgniter\BaseModel->__construct(Object(CodeIgniter\Validation\Validation))
+ 4 APPPATH\Controllers\Home.php(10): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 08:05:43 --> ErrorException: Undefined variable $primaryKey
+in APPPATH\Models\PersonModel.php on line 11.
+ 1 APPPATH\Models\PersonModel.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $primaryKey', 'C:\\xampp\\htdocs\\webService\\app\\Models\\PersonModel.php', 11)
+ 2 SYSTEMPATH\BaseModel.php(344): App\Models\PersonModel->initialize()
+ 3 SYSTEMPATH\Model.php(157): CodeIgniter\BaseModel->__construct(Object(CodeIgniter\Validation\Validation))
+ 4 APPPATH\Controllers\Home.php(10): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 08:05:53 --> ErrorException: Undefined variable $db
+in APPPATH\Models\PersonModel.php on line 13.
+ 1 APPPATH\Models\PersonModel.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'C:\\xampp\\htdocs\\webService\\app\\Models\\PersonModel.php', 13)
+ 2 SYSTEMPATH\BaseModel.php(344): App\Models\PersonModel->initialize()
+ 3 SYSTEMPATH\Model.php(157): CodeIgniter\BaseModel->__construct(Object(CodeIgniter\Validation\Validation))
+ 4 APPPATH\Controllers\Home.php(10): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 08:06:01 --> ErrorException: Undefined variable $db
+in APPPATH\Models\PersonModel.php on line 20.
+ 1 APPPATH\Models\PersonModel.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'C:\\xampp\\htdocs\\webService\\app\\Models\\PersonModel.php', 20)
+ 2 APPPATH\Controllers\Home.php(11): App\Models\PersonModel->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 08:06:46 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::findAll()
+in APPPATH\Models\PersonModel.php on line 19.
+ 1 APPPATH\Controllers\Home.php(11): App\Models\PersonModel->get()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 08:07:03 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::findAll()
+in APPPATH\Models\PersonModel.php on line 19.
+ 1 APPPATH\Controllers\Home.php(11): App\Models\PersonModel->get()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 08:08:54 --> ErrorException: Undefined property: CodeIgniter\Database\MySQLi\Result::$getResultArray
+in APPPATH\Models\PersonModel.php on line 20.
+ 1 APPPATH\Models\PersonModel.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\Database\\MySQLi\\Result::$getResultArray', 'C:\\xampp\\htdocs\\webService\\app\\Models\\PersonModel.php', 20)
+ 2 APPPATH\Controllers\Home.php(11): App\Models\PersonModel->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 12:06:01 --> Error: Class "App\Controllers\QuizModel" not found
+in APPPATH\Controllers\QuizController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->get()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 12:09:07 --> Error: Class "App\Controllers\QuizModel" not found
+in APPPATH\Controllers\QuizController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->get()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 12:09:43 --> Error: Class "App\Controllers\QuizModel" not found
+in APPPATH\Controllers\QuizController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->get()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 12:09:58 --> Error: Class "App\Controllers\QuizModel" not found
+in APPPATH\Controllers\QuizController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->get()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 12:10:13 --> ErrorException: Undefined variable $builder
+in APPPATH\Models\QuizModel.php on line 23.
+ 1 APPPATH\Models\QuizModel.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $builder', 'C:\\xampp\\htdocs\\webService\\app\\Models\\QuizModel.php', 23)
+ 2 APPPATH\Controllers\QuizController.php(15): App\Models\QuizModel->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->get()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 12:10:18 --> ErrorException: Undefined variable $builder
+in APPPATH\Models\QuizModel.php on line 23.
+ 1 APPPATH\Models\QuizModel.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $builder', 'C:\\xampp\\htdocs\\webService\\app\\Models\\QuizModel.php', 23)
+ 2 APPPATH\Controllers\QuizController.php(15): App\Models\QuizModel->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->get()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-29 12:11:48 --> mysqli_sql_exception: Table 'api_example.quiz' doesn't exist in C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\webService\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\webService\app\Models\QuizModel.php(24): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\webService\app\Controllers\QuizController.php(15): App\Models\QuizModel->get()
+#6 C:\xampp\htdocs\webService\system\CodeIgniter.php(941): App\Controllers\QuizController->get()
+#7 C:\xampp\htdocs\webService\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+#8 C:\xampp\htdocs\webService\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\webService\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-29 12:11:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'api_example.quiz' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `quiz`', [], false)
+ 2 APPPATH\Models\QuizModel.php(24): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\QuizController.php(15): App\Models\QuizModel->get()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->get()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 12:11:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'api_example.quiz' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `quiz`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `quiz`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `quiz`', [], false)
+ 4 APPPATH\Models\QuizModel.php(24): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\QuizController.php(15): App\Models\QuizModel->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->get()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 12:11:48 --> [Caused by] mysqli_sql_exception: Table 'api_example.quiz' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `quiz`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `quiz`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `quiz`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `quiz`', [], false)
+ 5 APPPATH\Models\QuizModel.php(24): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\QuizController.php(15): App\Models\QuizModel->get()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->get()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 12:12:26 --> Error: Call to undefined method App\Controllers\QuizController::respond()
+in APPPATH\Controllers\QuizController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->get()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 12:13:03 --> Error: Call to undefined method App\Controllers\QuizController::respose()
+in APPPATH\Controllers\QuizController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->get()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-29 12:13:53 --> Error: Call to undefined method App\Controllers\QuizController::response()
+in APPPATH\Controllers\QuizController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->get()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
