@@ -1,0 +1,723 @@
+ERROR - 2024-04-05 12:02:46 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1) VALUES (:1:)' at line 1 in C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `do...', 0)
+#1 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `do...')
+#2 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `do...')
+#3 C:\xampp\htdocs\webService\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `do...', Array, false)
+#4 C:\xampp\htdocs\webService\app\Models\DomandaModel.php(33): CodeIgniter\Database\BaseBuilder->insert(1)
+#5 C:\xampp\htdocs\webService\app\Controllers\QuizController.php(38): App\Models\DomandaModel->create(1, Array)
+#6 C:\xampp\htdocs\webService\system\CodeIgniter.php(941): App\Controllers\QuizController->create()
+#7 C:\xampp\htdocs\webService\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+#8 C:\xampp\htdocs\webService\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\webService\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-05 12:02:46 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1) VALUES (:1:)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `domande` (1) VALUES (:1:)', [...], false)
+ 2 APPPATH\Models\DomandaModel.php(33): CodeIgniter\Database\BaseBuilder->insert(1)
+ 3 APPPATH\Controllers\QuizController.php(38): App\Models\DomandaModel->create(1, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 12:02:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1) VALUES (:1:)' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `domande` (1) VALUES (:1:)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `domande` (1) VALUES (:1:)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `domande` (1) VALUES (:1:)', [...], false)
+ 4 APPPATH\Models\DomandaModel.php(33): CodeIgniter\Database\BaseBuilder->insert(1)
+ 5 APPPATH\Controllers\QuizController.php(38): App\Models\DomandaModel->create(1, [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 12:02:46 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1) VALUES (:1:)' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `domande` (1) VALUES (:1:)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `domande` (1) VALUES (:1:)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `domande` (1) VALUES (:1:)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `domande` (1) VALUES (:1:)', [...], false)
+ 5 APPPATH\Models\DomandaModel.php(33): CodeIgniter\Database\BaseBuilder->insert(1)
+ 6 APPPATH\Controllers\QuizController.php(38): App\Models\DomandaModel->create(1, [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->create()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 12:04:19 --> ErrorException: Array to string conversion
+in APPPATH\Controllers\QuizController.php on line 38.
+ 1 APPPATH\Controllers\QuizController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\webService\\app\\Controllers\\QuizController.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-05 12:05:49 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '4) VALUES (:4:)' at line 1 in C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `do...', 0)
+#1 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `do...')
+#2 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `do...')
+#3 C:\xampp\htdocs\webService\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `do...', Array, false)
+#4 C:\xampp\htdocs\webService\app\Models\DomandaModel.php(33): CodeIgniter\Database\BaseBuilder->insert(4)
+#5 C:\xampp\htdocs\webService\app\Controllers\QuizController.php(40): App\Models\DomandaModel->create(4, Array)
+#6 C:\xampp\htdocs\webService\system\CodeIgniter.php(941): App\Controllers\QuizController->create()
+#7 C:\xampp\htdocs\webService\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+#8 C:\xampp\htdocs\webService\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\webService\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-05 12:05:49 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '4) VALUES (:4:)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `domande` (4) VALUES (:4:)', [...], false)
+ 2 APPPATH\Models\DomandaModel.php(33): CodeIgniter\Database\BaseBuilder->insert(4)
+ 3 APPPATH\Controllers\QuizController.php(40): App\Models\DomandaModel->create(4, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 12:05:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '4) VALUES (:4:)' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `domande` (4) VALUES (:4:)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `domande` (4) VALUES (:4:)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `domande` (4) VALUES (:4:)', [...], false)
+ 4 APPPATH\Models\DomandaModel.php(33): CodeIgniter\Database\BaseBuilder->insert(4)
+ 5 APPPATH\Controllers\QuizController.php(40): App\Models\DomandaModel->create(4, [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 12:05:49 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '4) VALUES (:4:)' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `domande` (4) VALUES (:4:)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `domande` (4) VALUES (:4:)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `domande` (4) VALUES (:4:)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `domande` (4) VALUES (:4:)', [...], false)
+ 5 APPPATH\Models\DomandaModel.php(33): CodeIgniter\Database\BaseBuilder->insert(4)
+ 6 APPPATH\Controllers\QuizController.php(40): App\Models\DomandaModel->create(4, [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->create()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-05 12:13:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '5) VALUES (:5:)' at line 1 in C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `do...', 0)
+#1 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `do...')
+#2 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `do...')
+#3 C:\xampp\htdocs\webService\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `do...', Array, false)
+#4 C:\xampp\htdocs\webService\app\Models\DomandaModel.php(33): CodeIgniter\Database\BaseBuilder->insert(5)
+#5 C:\xampp\htdocs\webService\app\Controllers\QuizController.php(41): App\Models\DomandaModel->create(5, Array)
+#6 C:\xampp\htdocs\webService\system\CodeIgniter.php(941): App\Controllers\QuizController->create()
+#7 C:\xampp\htdocs\webService\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+#8 C:\xampp\htdocs\webService\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\webService\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-05 12:13:38 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '5) VALUES (:5:)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `domande` (5) VALUES (:5:)', [...], false)
+ 2 APPPATH\Models\DomandaModel.php(33): CodeIgniter\Database\BaseBuilder->insert(5)
+ 3 APPPATH\Controllers\QuizController.php(41): App\Models\DomandaModel->create(5, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 12:13:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '5) VALUES (:5:)' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `domande` (5) VALUES (:5:)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `domande` (5) VALUES (:5:)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `domande` (5) VALUES (:5:)', [...], false)
+ 4 APPPATH\Models\DomandaModel.php(33): CodeIgniter\Database\BaseBuilder->insert(5)
+ 5 APPPATH\Controllers\QuizController.php(41): App\Models\DomandaModel->create(5, [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 12:13:38 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '5) VALUES (:5:)' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `domande` (5) VALUES (:5:)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `domande` (5) VALUES (:5:)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `domande` (5) VALUES (:5:)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `domande` (5) VALUES (:5:)', [...], false)
+ 5 APPPATH\Models\DomandaModel.php(33): CodeIgniter\Database\BaseBuilder->insert(5)
+ 6 APPPATH\Controllers\QuizController.php(41): App\Models\DomandaModel->create(5, [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->create()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 12:19:50 --> ParseError: syntax error, unexpected token "public"
+in APPPATH\Controllers\QuizController.php on line 60.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\webService\\app\\Controllers\\QuizController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\QuizController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\QuizController')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\QuizController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 12:44:32 --> Error: Class "App\Models\QuizDomandaModel" not found
+in APPPATH\Controllers\QuizController.php on line 32.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->create()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 12:45:12 --> Error: Cannot use object of type App\Models\QuizModel as array
+in APPPATH\Controllers\QuizController.php on line 47.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->create()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 13:04:00 --> Error: Cannot use object of type App\Models\QuizModel as array
+in APPPATH\Controllers\QuizController.php on line 47.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->create()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 13:08:08 --> InvalidArgumentException: You have not selected a database type to connect to.
+in SYSTEMPATH\Database\Database.php on line 52.
+ 1 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(153): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Controllers\QuizController.php(29): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 13:10:09 --> InvalidArgumentException: You have not selected a database type to connect to.
+in SYSTEMPATH\Database\Database.php on line 52.
+ 1 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Model.php(153): CodeIgniter\Database\Config::connect('default')
+ 3 APPPATH\Controllers\QuizController.php(29): CodeIgniter\Model->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 13:15:59 --> Error: Cannot use object of type App\Models\QuizModel as array
+in APPPATH\Controllers\QuizController.php on line 47.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->create()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 13:16:22 --> ErrorException: Undefined variable $pair
+in APPPATH\Models\QuizDomandaModel.php on line 11.
+ 1 APPPATH\Models\QuizDomandaModel.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pair', 'C:\\xampp\\htdocs\\webService\\app\\Models\\QuizDomandaModel.php', 11)
+ 2 APPPATH\Controllers\QuizController.php(48): App\Models\QuizDomandaModel->create([...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->create()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 14:19:04 --> ErrorException: Declaration of App\Models\QuizModel::delete($id) must be compatible with CodeIgniter\BaseModel::delete($id = null, bool $purge = false)
+in APPPATH\Models\QuizModel.php on line 44.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-04-05 14:22:32 --> ErrorException: Declaration of App\Models\QuizModel::delete($id) must be compatible with CodeIgniter\BaseModel::delete($id = null, bool $purge = false)
+in APPPATH\Models\QuizModel.php on line 44.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-04-05 14:25:28 --> ErrorException: Declaration of App\Models\QuizModel::delete($id) must be compatible with CodeIgniter\BaseModel::delete($id = null, bool $purge = false)
+in APPPATH\Models\QuizModel.php on line 44.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-04-05 14:56:40 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::join()
+in APPPATH\Models\DomandaModel.php on line 45.
+ 1 APPPATH\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(null, '9')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->delete('9')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 14:58:07 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::join()
+in APPPATH\Models\DomandaModel.php on line 45.
+ 1 APPPATH\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(null, '9')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->delete('9')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-05 14:58:32 --> mysqli_sql_exception: Unknown column 'quiz_domande.id_quiz' in 'where clause' in C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ri...', 0)
+#1 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ri...')
+#2 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ri...')
+#3 C:\xampp\htdocs\webService\system\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ri...', Array, false)
+#4 C:\xampp\htdocs\webService\app\Models\DomandaModel.php(45): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\xampp\htdocs\webService\app\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(NULL, '9')
+#6 C:\xampp\htdocs\webService\system\CodeIgniter.php(941): App\Controllers\QuizController->delete('9')
+#7 C:\xampp\htdocs\webService\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+#8 C:\xampp\htdocs\webService\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\webService\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-05 14:58:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'quiz_domande.id_quiz' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `risposte`
+WHERE `quiz_domande`.`id_quiz` = :quiz_domande.id_quiz:', [...], false)
+ 2 APPPATH\Models\DomandaModel.php(45): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(null, '9')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->delete('9')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 14:58:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'quiz_domande.id_quiz' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `risposte`
+WHERE `quiz_domande`.`id_quiz` = \'9\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `risposte`
+WHERE `quiz_domande`.`id_quiz` = \'9\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `risposte`
+WHERE `quiz_domande`.`id_quiz` = :quiz_domande.id_quiz:', [...], false)
+ 4 APPPATH\Models\DomandaModel.php(45): CodeIgniter\Database\BaseBuilder->delete([...])
+ 5 APPPATH\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(null, '9')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->delete('9')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 14:58:32 --> [Caused by] mysqli_sql_exception: Unknown column 'quiz_domande.id_quiz' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `risposte`
+WHERE `quiz_domande`.`id_quiz` = \'9\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `risposte`
+WHERE `quiz_domande`.`id_quiz` = \'9\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `risposte`
+WHERE `quiz_domande`.`id_quiz` = \'9\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `risposte`
+WHERE `quiz_domande`.`id_quiz` = :quiz_domande.id_quiz:', [...], false)
+ 5 APPPATH\Models\DomandaModel.php(45): CodeIgniter\Database\BaseBuilder->delete([...])
+ 6 APPPATH\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(null, '9')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->delete('9')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-05 14:59:06 --> mysqli_sql_exception: Unknown column 'quiz_domande.id_quiz' in 'where clause' in C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ri...', 0)
+#1 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ri...')
+#2 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ri...')
+#3 C:\xampp\htdocs\webService\system\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ri...', Array, false)
+#4 C:\xampp\htdocs\webService\app\Models\DomandaModel.php(45): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\xampp\htdocs\webService\app\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(NULL, '10')
+#6 C:\xampp\htdocs\webService\system\CodeIgniter.php(941): App\Controllers\QuizController->delete('10')
+#7 C:\xampp\htdocs\webService\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+#8 C:\xampp\htdocs\webService\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\webService\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-05 14:59:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'quiz_domande.id_quiz' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `risposte`
+WHERE `quiz_domande`.`id_quiz` = :quiz_domande.id_quiz:', [...], false)
+ 2 APPPATH\Models\DomandaModel.php(45): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(null, '10')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->delete('10')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 14:59:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'quiz_domande.id_quiz' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `risposte`
+WHERE `quiz_domande`.`id_quiz` = \'10\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `risposte`
+WHERE `quiz_domande`.`id_quiz` = \'10\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `risposte`
+WHERE `quiz_domande`.`id_quiz` = :quiz_domande.id_quiz:', [...], false)
+ 4 APPPATH\Models\DomandaModel.php(45): CodeIgniter\Database\BaseBuilder->delete([...])
+ 5 APPPATH\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(null, '10')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->delete('10')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 14:59:06 --> [Caused by] mysqli_sql_exception: Unknown column 'quiz_domande.id_quiz' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `risposte`
+WHERE `quiz_domande`.`id_quiz` = \'10\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `risposte`
+WHERE `quiz_domande`.`id_quiz` = \'10\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `risposte`
+WHERE `quiz_domande`.`id_quiz` = \'10\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `risposte`
+WHERE `quiz_domande`.`id_quiz` = :quiz_domande.id_quiz:', [...], false)
+ 5 APPPATH\Models\DomandaModel.php(45): CodeIgniter\Database\BaseBuilder->delete([...])
+ 6 APPPATH\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(null, '10')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->delete('10')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-05 15:00:27 --> mysqli_sql_exception: Unknown column 'quiz_domande.id_quiz' in 'where clause' in C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ri...', 0)
+#1 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ri...')
+#2 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ri...')
+#3 C:\xampp\htdocs\webService\system\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ri...', Array, false)
+#4 C:\xampp\htdocs\webService\app\Models\DomandaModel.php(45): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\xampp\htdocs\webService\app\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(NULL, '10')
+#6 C:\xampp\htdocs\webService\system\CodeIgniter.php(941): App\Controllers\QuizController->delete('10')
+#7 C:\xampp\htdocs\webService\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+#8 C:\xampp\htdocs\webService\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\webService\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-05 15:00:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'quiz_domande.id_quiz' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `risposte`
+WHERE `quiz_domande`.`id_quiz` = :quiz_domande.id_quiz:', [...], false)
+ 2 APPPATH\Models\DomandaModel.php(45): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(null, '10')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->delete('10')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 15:00:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'quiz_domande.id_quiz' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `risposte`
+WHERE `quiz_domande`.`id_quiz` = \'10\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `risposte`
+WHERE `quiz_domande`.`id_quiz` = \'10\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `risposte`
+WHERE `quiz_domande`.`id_quiz` = :quiz_domande.id_quiz:', [...], false)
+ 4 APPPATH\Models\DomandaModel.php(45): CodeIgniter\Database\BaseBuilder->delete([...])
+ 5 APPPATH\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(null, '10')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->delete('10')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 15:00:27 --> [Caused by] mysqli_sql_exception: Unknown column 'quiz_domande.id_quiz' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `risposte`
+WHERE `quiz_domande`.`id_quiz` = \'10\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `risposte`
+WHERE `quiz_domande`.`id_quiz` = \'10\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `risposte`
+WHERE `quiz_domande`.`id_quiz` = \'10\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `risposte`
+WHERE `quiz_domande`.`id_quiz` = :quiz_domande.id_quiz:', [...], false)
+ 5 APPPATH\Models\DomandaModel.php(45): CodeIgniter\Database\BaseBuilder->delete([...])
+ 6 APPPATH\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(null, '10')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->delete('10')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-05 15:00:52 --> mysqli_sql_exception: Unknown column 'quiz_domande.id_quiz' in 'where clause' in C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ri...', 0)
+#1 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ri...')
+#2 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ri...')
+#3 C:\xampp\htdocs\webService\system\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ri...', Array, false)
+#4 C:\xampp\htdocs\webService\app\Models\DomandaModel.php(45): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\xampp\htdocs\webService\app\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(NULL, '10')
+#6 C:\xampp\htdocs\webService\system\CodeIgniter.php(941): App\Controllers\QuizController->delete('10')
+#7 C:\xampp\htdocs\webService\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+#8 C:\xampp\htdocs\webService\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\webService\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-05 15:00:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'quiz_domande.id_quiz' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `risposte`
+WHERE `quiz_domande`.`id_quiz` = :quiz_domande.id_quiz:', [...], false)
+ 2 APPPATH\Models\DomandaModel.php(45): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(null, '10')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->delete('10')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 15:00:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'quiz_domande.id_quiz' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `risposte`
+WHERE `quiz_domande`.`id_quiz` = \'10\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `risposte`
+WHERE `quiz_domande`.`id_quiz` = \'10\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `risposte`
+WHERE `quiz_domande`.`id_quiz` = :quiz_domande.id_quiz:', [...], false)
+ 4 APPPATH\Models\DomandaModel.php(45): CodeIgniter\Database\BaseBuilder->delete([...])
+ 5 APPPATH\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(null, '10')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->delete('10')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 15:00:52 --> [Caused by] mysqli_sql_exception: Unknown column 'quiz_domande.id_quiz' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `risposte`
+WHERE `quiz_domande`.`id_quiz` = \'10\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `risposte`
+WHERE `quiz_domande`.`id_quiz` = \'10\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `risposte`
+WHERE `quiz_domande`.`id_quiz` = \'10\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `risposte`
+WHERE `quiz_domande`.`id_quiz` = :quiz_domande.id_quiz:', [...], false)
+ 5 APPPATH\Models\DomandaModel.php(45): CodeIgniter\Database\BaseBuilder->delete([...])
+ 6 APPPATH\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(null, '10')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->delete('10')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 15:03:11 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::from()
+in APPPATH\Models\DomandaModel.php on line 45.
+ 1 APPPATH\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(null, '10')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->delete('10')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-05 15:08:44 --> mysqli_sql_exception: Unknown column 'quiz_domande.id_quiz' in 'where clause' in C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `do...', 0)
+#1 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `do...')
+#2 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `do...')
+#3 C:\xampp\htdocs\webService\system\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `do...', Array, false)
+#4 C:\xampp\htdocs\webService\app\Models\DomandaModel.php(45): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\xampp\htdocs\webService\app\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(NULL, '10')
+#6 C:\xampp\htdocs\webService\system\CodeIgniter.php(941): App\Controllers\QuizController->delete('10')
+#7 C:\xampp\htdocs\webService\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+#8 C:\xampp\htdocs\webService\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\webService\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-05 15:08:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'quiz_domande.id_quiz' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `domande`
+WHERE `quiz_domande`.`id_quiz` = :quiz_domande.id_quiz:', [...], false)
+ 2 APPPATH\Models\DomandaModel.php(45): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(null, '10')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->delete('10')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 15:08:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'quiz_domande.id_quiz' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `domande`
+WHERE `quiz_domande`.`id_quiz` = \'10\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `domande`
+WHERE `quiz_domande`.`id_quiz` = \'10\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `domande`
+WHERE `quiz_domande`.`id_quiz` = :quiz_domande.id_quiz:', [...], false)
+ 4 APPPATH\Models\DomandaModel.php(45): CodeIgniter\Database\BaseBuilder->delete([...])
+ 5 APPPATH\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(null, '10')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->delete('10')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 15:08:44 --> [Caused by] mysqli_sql_exception: Unknown column 'quiz_domande.id_quiz' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `domande`
+WHERE `quiz_domande`.`id_quiz` = \'10\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `domande`
+WHERE `quiz_domande`.`id_quiz` = \'10\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `domande`
+WHERE `quiz_domande`.`id_quiz` = \'10\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `domande`
+WHERE `quiz_domande`.`id_quiz` = :quiz_domande.id_quiz:', [...], false)
+ 5 APPPATH\Models\DomandaModel.php(45): CodeIgniter\Database\BaseBuilder->delete([...])
+ 6 APPPATH\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(null, '10')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->delete('10')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-05 15:10:13 --> mysqli_sql_exception: Unknown column 'id_quiz' in 'where clause' in C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `do...', 0)
+#1 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `do...')
+#2 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `do...')
+#3 C:\xampp\htdocs\webService\system\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `do...', Array, false)
+#4 C:\xampp\htdocs\webService\app\Models\DomandaModel.php(45): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\webService\app\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(NULL, '10')
+#6 C:\xampp\htdocs\webService\system\CodeIgniter.php(941): App\Controllers\QuizController->delete('10')
+#7 C:\xampp\htdocs\webService\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+#8 C:\xampp\htdocs\webService\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\webService\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-05 15:10:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id_quiz' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `domande`
+WHERE `id_quiz` = :id_quiz:', [...], false)
+ 2 APPPATH\Models\DomandaModel.php(45): CodeIgniter\Database\BaseBuilder->delete()
+ 3 APPPATH\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(null, '10')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->delete('10')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 15:10:13 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id_quiz' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `domande`
+WHERE `id_quiz` = \'10\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `domande`
+WHERE `id_quiz` = \'10\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `domande`
+WHERE `id_quiz` = :id_quiz:', [...], false)
+ 4 APPPATH\Models\DomandaModel.php(45): CodeIgniter\Database\BaseBuilder->delete()
+ 5 APPPATH\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(null, '10')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->delete('10')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 15:10:13 --> [Caused by] mysqli_sql_exception: Unknown column 'id_quiz' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `domande`
+WHERE `id_quiz` = \'10\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `domande`
+WHERE `id_quiz` = \'10\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `domande`
+WHERE `id_quiz` = \'10\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `domande`
+WHERE `id_quiz` = :id_quiz:', [...], false)
+ 5 APPPATH\Models\DomandaModel.php(45): CodeIgniter\Database\BaseBuilder->delete()
+ 6 APPPATH\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(null, '10')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->delete('10')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-05 15:10:54 --> mysqli_sql_exception: Unknown column 'quiz_domande.id_quiz' in 'where clause' in C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `do...', 0)
+#1 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `do...')
+#2 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `do...')
+#3 C:\xampp\htdocs\webService\system\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `do...', Array, false)
+#4 C:\xampp\htdocs\webService\app\Models\DomandaModel.php(45): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\webService\app\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(NULL, '10')
+#6 C:\xampp\htdocs\webService\system\CodeIgniter.php(941): App\Controllers\QuizController->delete('10')
+#7 C:\xampp\htdocs\webService\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+#8 C:\xampp\htdocs\webService\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\webService\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-05 15:10:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'quiz_domande.id_quiz' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `domande`
+WHERE `quiz_domande`.`id_quiz` = :quiz_domande.id_quiz:', [...], false)
+ 2 APPPATH\Models\DomandaModel.php(45): CodeIgniter\Database\BaseBuilder->delete()
+ 3 APPPATH\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(null, '10')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->delete('10')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 15:10:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'quiz_domande.id_quiz' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `domande`
+WHERE `quiz_domande`.`id_quiz` = \'10\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `domande`
+WHERE `quiz_domande`.`id_quiz` = \'10\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `domande`
+WHERE `quiz_domande`.`id_quiz` = :quiz_domande.id_quiz:', [...], false)
+ 4 APPPATH\Models\DomandaModel.php(45): CodeIgniter\Database\BaseBuilder->delete()
+ 5 APPPATH\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(null, '10')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->delete('10')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 15:10:54 --> [Caused by] mysqli_sql_exception: Unknown column 'quiz_domande.id_quiz' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `domande`
+WHERE `quiz_domande`.`id_quiz` = \'10\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `domande`
+WHERE `quiz_domande`.`id_quiz` = \'10\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `domande`
+WHERE `quiz_domande`.`id_quiz` = \'10\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `domande`
+WHERE `quiz_domande`.`id_quiz` = :quiz_domande.id_quiz:', [...], false)
+ 5 APPPATH\Models\DomandaModel.php(45): CodeIgniter\Database\BaseBuilder->delete()
+ 6 APPPATH\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(null, '10')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->delete('10')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 15:32:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2763.
+ 1 APPPATH\Models\DomandaModel.php(45): CodeIgniter\Database\BaseBuilder->delete()
+ 2 APPPATH\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(null, '11')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->delete('11')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-05 15:34:00 --> mysqli_sql_exception: Unknown column 'domande' in 'where clause' in C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `do...', 0)
+#1 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `do...')
+#2 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `do...')
+#3 C:\xampp\htdocs\webService\system\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `do...', Array, false)
+#4 C:\xampp\htdocs\webService\app\Models\DomandaModel.php(45): CodeIgniter\Database\BaseBuilder->delete('domande')
+#5 C:\xampp\htdocs\webService\app\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(NULL, '11')
+#6 C:\xampp\htdocs\webService\system\CodeIgniter.php(941): App\Controllers\QuizController->delete('11')
+#7 C:\xampp\htdocs\webService\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+#8 C:\xampp\htdocs\webService\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\webService\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-05 15:34:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'domande' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `domande`
+WHERE `domande` IS NULL', [], false)
+ 2 APPPATH\Models\DomandaModel.php(45): CodeIgniter\Database\BaseBuilder->delete('domande')
+ 3 APPPATH\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(null, '11')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->delete('11')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 15:34:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'domande' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `domande`
+WHERE `domande` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `domande`
+WHERE `domande` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `domande`
+WHERE `domande` IS NULL', [], false)
+ 4 APPPATH\Models\DomandaModel.php(45): CodeIgniter\Database\BaseBuilder->delete('domande')
+ 5 APPPATH\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(null, '11')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->delete('11')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 15:34:00 --> [Caused by] mysqli_sql_exception: Unknown column 'domande' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `domande`
+WHERE `domande` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `domande`
+WHERE `domande` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `domande`
+WHERE `domande` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `domande`
+WHERE `domande` IS NULL', [], false)
+ 5 APPPATH\Models\DomandaModel.php(45): CodeIgniter\Database\BaseBuilder->delete('domande')
+ 6 APPPATH\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(null, '11')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->delete('11')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 15:38:43 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\DomandaModel.php on line 45.
+ 1 APPPATH\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(null, '11')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->delete('11')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-04-05 15:39:43 --> mysqli_sql_exception: Unknown column 'quiz_domande.id_quiz' in 'where clause' in C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `do...', 0)
+#1 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `do...')
+#2 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `do...')
+#3 C:\xampp\htdocs\webService\system\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `do...', Array, false)
+#4 C:\xampp\htdocs\webService\app\Models\DomandaModel.php(45): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\xampp\htdocs\webService\app\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(NULL, '11')
+#6 C:\xampp\htdocs\webService\system\CodeIgniter.php(941): App\Controllers\QuizController->delete('11')
+#7 C:\xampp\htdocs\webService\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+#8 C:\xampp\htdocs\webService\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\webService\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-05 15:39:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'quiz_domande.id_quiz' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `domande`
+WHERE `quiz_domande`.`id_quiz` = :quiz_domande.id_quiz:', [...], false)
+ 2 APPPATH\Models\DomandaModel.php(45): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(null, '11')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->delete('11')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 15:39:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'quiz_domande.id_quiz' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `domande`
+WHERE `quiz_domande`.`id_quiz` = \'11\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `domande`
+WHERE `quiz_domande`.`id_quiz` = \'11\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `domande`
+WHERE `quiz_domande`.`id_quiz` = :quiz_domande.id_quiz:', [...], false)
+ 4 APPPATH\Models\DomandaModel.php(45): CodeIgniter\Database\BaseBuilder->delete([...])
+ 5 APPPATH\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(null, '11')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->delete('11')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-05 15:39:43 --> [Caused by] mysqli_sql_exception: Unknown column 'quiz_domande.id_quiz' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `domande`
+WHERE `quiz_domande`.`id_quiz` = \'11\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `domande`
+WHERE `quiz_domande`.`id_quiz` = \'11\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `domande`
+WHERE `quiz_domande`.`id_quiz` = \'11\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `domande`
+WHERE `quiz_domande`.`id_quiz` = :quiz_domande.id_quiz:', [...], false)
+ 5 APPPATH\Models\DomandaModel.php(45): CodeIgniter\Database\BaseBuilder->delete([...])
+ 6 APPPATH\Controllers\QuizController.php(84): App\Models\DomandaModel->delete(null, '11')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->delete('11')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -4,14 +4,10 @@ use CodeIgniter\Model;
 
 class QuizModel extends Model
 {
-
-    protected function initialize()
-    {
-        $table = 'quiz';
-        $primaryKey = 'id_quiz';
-        $this->allowedFields[] = "punteggio, nome, descrizione";
-    }
-
+    protected $table = 'quiz';
+    protected $primaryKey = 'id_quiz';
+    protected $allowedFields = ["punteggio", "nome", "descrizione"];
+    protected $useSoftDelete = false;
     
 
     function get($id = false){
@@ -44,5 +40,10 @@ class QuizModel extends Model
         $db->table("quiz")->where("id_quiz", $quiz["id_quiz"])->update($quiz);
         $data = $db->table("quiz")->where("id_quiz", $quiz["id_quiz"])->get()->getResultArray();
         return $data[0];
+    }
+
+    public function delete($id = null, bool $purge = false){
+        $db = db_connect();
+        $db->table("quiz")->delete(["id_quiz" => $id]);
     }
 }

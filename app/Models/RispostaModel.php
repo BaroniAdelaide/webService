@@ -5,12 +5,9 @@ use CodeIgniter\Model;
 class RispostaModel extends Model
 {
 
-    protected function initialize()
-    {
-        $table = 'risposte';
-        $primaryKey = 'id_risposta';
-        $this->allowedFields[] = "id_risposta, risposta, corretta";
-    }
+    protected $table = 'risposte';
+    protected $primaryKey = 'id_risposta';
+    protected $allowedFields = ["id_risposta", "risposta", "corretta"];
 
     function get($id = null){
         $db = db_connect();
@@ -41,5 +38,15 @@ class RispostaModel extends Model
         $db->table("risposte")->where("id_risposta", $risposta["id_risposta"])->update($risposta);
         $data = $db->table("risposte")->where("id_risposta", $risposta["id_risposta"])->get()->getResultArray();
         return $data[0];
+    }
+
+    public function delete($id = null, $idDomanda = null, bool $purge = false){
+        $db = db_connect();
+        if($idDomanda){
+            //$db->table("risposte")->join("domanda_risposte", "domanda_risposte.id_risposta = risposte.id_risposta")->where("domanda_risposte.id_domanda", $idDomanda)->delete();
+        }
+        else{
+            $db->delete(["id_risposta" => $id]);
+        }
     }
 }

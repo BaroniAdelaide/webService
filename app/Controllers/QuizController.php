@@ -4,6 +4,8 @@ namespace App\Controllers;
 use App\Models\QuizModel;
 use App\Models\DomandaModel;
 use App\Models\RispostaModel;
+use App\Models\QuizDomandaModel;
+use App\Models\DomandaRispostaModel;
 
 class QuizController extends BaseController
 {
@@ -27,25 +29,39 @@ class QuizController extends BaseController
         $quizModel = new QuizModel();
         $domandaModel = new DomandaModel();
         $rispostaModel = new RispostaModel();
+        $quizDomandaModel = new QuizDomandaModel();
+        $domandaRispostaModel = new DomandaRispostaModel();
         $body = get_object_vars(json_decode($this->request->getBody()));
 
+        //inserisci quiz
         $quiz = array_slice($body, 0, 3);
         $quizModel->create($quiz);
 
         foreach($body["domande"] as $obj){
+            //inserisci domanda
             $domandaRaw = get_object_vars($obj);
             $domanda = array_slice($domandaRaw, 0, 2);
-            $domandaModel->create($quiz["id_quiz"], $domanda);
+            $domandaModel->create($domanda);
+
+            //inserisci quiz_domande
+            $quizDomanda = array("id_quiz" => $quiz["id_quiz"], "id_domanda" => $domanda["id_domanda"]);
+            $quizDomandaModel->create($quizDomanda);
+
             foreach($domandaRaw["risposte"] as $obj){
+                //inserisci risposta
                 $risposta = get_object_vars($obj);
                 $rispostaModel->create($risposta);
                 array_push($domanda["risposte"], $risposta);
 
+                //inserisci domanda_risposte
+                $domandaRisposta = array("id_domanda" => $domanda["id_domanda"], "id_risposta" => $risposta["id_risposta"]);
+                $domandaRispostaModel->create($domandaRisposta);
+
             }
             array_push($quiz["domande"], $domanda);
-
         }
 
+        
         return $this->response
             ->setStatusCode(200)
             ->setBody(json_encode($quiz));
@@ -59,5 +75,13 @@ class QuizController extends BaseController
         return $this->response
             ->setStatusCode(200)
             ->setBody(json_encode($updatedData));
+    }
+
+    public function delete($id){
+        $quizModel = new QuizModel();
+        $domandaModel = new DomandaModel();
+        $quizModel->delete($id);
+        $domandaModel->delete(null, $id);
+
     }
 }

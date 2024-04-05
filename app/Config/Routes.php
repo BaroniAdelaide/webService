@@ -14,6 +14,7 @@ $routes->post("quiz", "QuizController::create");
 //put (punteggio, nome, descrizione)
 $routes->put("quiz", "QuizController::put");
 //delete
+$routes->delete("quiz/(:num)", "QuizController::delete/$1");
 
 
 //domande
