@@ -1,0 +1,1024 @@
+CRITICAL - 2024-03-30 15:12:49 --> Error: Class "App\Models\RispostaModel" not found
+in APPPATH\Controllers\RispostaController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RispostaController->get()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RispostaController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 15:12:57 --> Error: Class "App\Models\RispostaModel" not found
+in APPPATH\Controllers\RispostaController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RispostaController->get('1')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RispostaController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 15:13:13 --> Error: Class "App\Models\RispostaModel" not found
+in APPPATH\Controllers\RispostaController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RispostaController->get()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RispostaController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 15:13:45 --> Error: Call to a member function json_encode() on array
+in APPPATH\Controllers\RispostaController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RispostaController->get()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RispostaController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 15:29:15 --> ErrorException: Undefined property: App\Controllers\DomandaController::$respond
+in APPPATH\Controllers\DomandaController.php on line 21.
+ 1 APPPATH\Controllers\DomandaController.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\DomandaController::$respond', 'C:\\xampp\\htdocs\\webService\\app\\Controllers\\DomandaController.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->get('3')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 15:55:45 --> ErrorException: Undefined property: App\Controllers\RispostaController::$request_
+in APPPATH\Controllers\RispostaController.php on line 29.
+ 1 APPPATH\Controllers\RispostaController.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\RispostaController::$request_', 'C:\\xampp\\htdocs\\webService\\app\\Controllers\\RispostaController.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RispostaController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RispostaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 16:00:19 --> ErrorException: Undefined property: App\Controllers\RispostaController::$request_
+in APPPATH\Controllers\RispostaController.php on line 30.
+ 1 APPPATH\Controllers\RispostaController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\RispostaController::$request_', 'C:\\xampp\\htdocs\\webService\\app\\Controllers\\RispostaController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RispostaController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RispostaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 16:06:20 --> ErrorException: Undefined property: App\Controllers\RispostaController::$request_
+in APPPATH\Controllers\RispostaController.php on line 30.
+ 1 APPPATH\Controllers\RispostaController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\RispostaController::$request_', 'C:\\xampp\\htdocs\\webService\\app\\Controllers\\RispostaController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RispostaController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RispostaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 16:10:40 --> InvalidArgumentException: You must supply the parameters: from, to.
+in SYSTEMPATH\Router\RouteCollection.php on line 1001.
+ 1 APPPATH\Config\Routes.php(22): CodeIgniter\Router\RouteCollection->match([...], 'RispostaController::create')
+ 2 SYSTEMPATH\Router\RouteCollection.php(345): require('C:\\xampp\\htdocs\\webService\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 16:11:58 --> ErrorException: Undefined property: App\Controllers\RispostaController::$request_
+in APPPATH\Controllers\RispostaController.php on line 30.
+ 1 APPPATH\Controllers\RispostaController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\RispostaController::$request_', 'C:\\xampp\\htdocs\\webService\\app\\Controllers\\RispostaController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RispostaController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RispostaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 16:15:16 --> ErrorException: Undefined property: App\Controllers\RispostaController::$request_
+in APPPATH\Controllers\RispostaController.php on line 30.
+ 1 APPPATH\Controllers\RispostaController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\RispostaController::$request_', 'C:\\xampp\\htdocs\\webService\\app\\Controllers\\RispostaController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RispostaController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RispostaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 16:15:21 --> ErrorException: Undefined property: App\Controllers\RispostaController::$request_
+in APPPATH\Controllers\RispostaController.php on line 30.
+ 1 APPPATH\Controllers\RispostaController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\RispostaController::$request_', 'C:\\xampp\\htdocs\\webService\\app\\Controllers\\RispostaController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RispostaController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RispostaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 16:47:42 --> ErrorException: Undefined property: App\Controllers\RispostaController::$request_
+in APPPATH\Controllers\RispostaController.php on line 30.
+ 1 APPPATH\Controllers\RispostaController.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\RispostaController::$request_', 'C:\\xampp\\htdocs\\webService\\app\\Controllers\\RispostaController.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RispostaController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RispostaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 16:50:46 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::insert()
+in APPPATH\Models\RispostaModel.php on line 33.
+ 1 APPPATH\Controllers\RispostaController.php(36): App\Models\RispostaModel->create([...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RispostaController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RispostaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 16:52:59 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::insert()
+in APPPATH\Models\RispostaModel.php on line 33.
+ 1 APPPATH\Controllers\RispostaController.php(36): App\Models\RispostaModel->create([...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RispostaController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RispostaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 16:55:20 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::insert()
+in APPPATH\Models\RispostaModel.php on line 33.
+ 1 APPPATH\Controllers\RispostaController.php(36): App\Models\RispostaModel->create([...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RispostaController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RispostaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 16:55:37 --> Error: Object of class CodeIgniter\Database\MySQLi\Connection could not be converted to string
+in APPPATH\Models\RispostaModel.php on line 33.
+ 1 APPPATH\Controllers\RispostaController.php(36): App\Models\RispostaModel->create([...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RispostaController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RispostaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 16:56:51 --> Error: Call to undefined method App\Controllers\RispostaController::respondCreated()
+in APPPATH\Controllers\RispostaController.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RispostaController->create()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RispostaController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 17:00:37 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::insert()
+in APPPATH\Models\RispostaModel.php on line 33.
+ 1 APPPATH\Controllers\RispostaController.php(34): App\Models\RispostaModel->create([...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RispostaController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RispostaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 17:00:38 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::insert()
+in APPPATH\Models\RispostaModel.php on line 33.
+ 1 APPPATH\Controllers\RispostaController.php(34): App\Models\RispostaModel->create([...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RispostaController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RispostaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 17:01:06 --> ErrorException: Undefined variable $builder
+in APPPATH\Models\RispostaModel.php on line 33.
+ 1 APPPATH\Models\RispostaModel.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $builder', 'C:\\xampp\\htdocs\\webService\\app\\Models\\RispostaModel.php', 33)
+ 2 APPPATH\Controllers\RispostaController.php(34): App\Models\RispostaModel->create([...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RispostaController->create()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RispostaController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 17:01:23 --> ErrorException: Undefined variable $builder
+in APPPATH\Models\RispostaModel.php on line 33.
+ 1 APPPATH\Models\RispostaModel.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $builder', 'C:\\xampp\\htdocs\\webService\\app\\Models\\RispostaModel.php', 33)
+ 2 APPPATH\Controllers\RispostaController.php(34): App\Models\RispostaModel->create([...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RispostaController->create()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RispostaController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-30 17:06:53 --> mysqli_sql_exception: Table 'api_quiz.rispose' doesn't exist in C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ri...', 0)
+#1 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ri...')
+#2 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ri...')
+#3 C:\xampp\htdocs\webService\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ri...', Array, false)
+#4 C:\xampp\htdocs\webService\app\Models\RispostaModel.php(33): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\webService\app\Controllers\RispostaController.php(34): App\Models\RispostaModel->create(Array)
+#6 C:\xampp\htdocs\webService\system\CodeIgniter.php(941): App\Controllers\RispostaController->create()
+#7 C:\xampp\htdocs\webService\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RispostaController))
+#8 C:\xampp\htdocs\webService\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\webService\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-30 17:06:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'api_quiz.rispose' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `rispose` (`risposta`, `corretta`) VALUES (:risposta:, :corretta:)', [...], false)
+ 2 APPPATH\Models\RispostaModel.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\RispostaController.php(34): App\Models\RispostaModel->create([...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RispostaController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RispostaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 17:06:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'api_quiz.rispose' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `rispose` (`risposta`, `corretta`) VALUES (\'rispostaNuova\', \'0\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `rispose` (`risposta`, `corretta`) VALUES (\'rispostaNuova\', \'0\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `rispose` (`risposta`, `corretta`) VALUES (:risposta:, :corretta:)', [...], false)
+ 4 APPPATH\Models\RispostaModel.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\RispostaController.php(34): App\Models\RispostaModel->create([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RispostaController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RispostaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 17:06:53 --> [Caused by] mysqli_sql_exception: Table 'api_quiz.rispose' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `rispose` (`risposta`, `corretta`) VALUES (\'rispostaNuova\', \'0\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `rispose` (`risposta`, `corretta`) VALUES (\'rispostaNuova\', \'0\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `rispose` (`risposta`, `corretta`) VALUES (\'rispostaNuova\', \'0\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `rispose` (`risposta`, `corretta`) VALUES (:risposta:, :corretta:)', [...], false)
+ 5 APPPATH\Models\RispostaModel.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\RispostaController.php(34): App\Models\RispostaModel->create([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RispostaController->create()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RispostaController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 17:22:28 --> ErrorException: Undefined variable $rispostaModel
+in APPPATH\Controllers\DomandaController.php on line 38.
+ 1 APPPATH\Controllers\DomandaController.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rispostaModel', 'C:\\xampp\\htdocs\\webService\\app\\Controllers\\DomandaController.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 17:22:50 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(662): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\DomandaController.php(38): CodeIgniter\Model->__call('create', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-30 17:23:49 --> mysqli_sql_exception: Table 'api_quiz.domende' doesn't exist in C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `do...', 0)
+#1 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `do...')
+#2 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `do...')
+#3 C:\xampp\htdocs\webService\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `do...', Array, false)
+#4 C:\xampp\htdocs\webService\app\Models\DomandaModel.php(33): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\webService\app\Controllers\DomandaController.php(38): App\Models\DomandaModel->create(Array)
+#6 C:\xampp\htdocs\webService\system\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+#7 C:\xampp\htdocs\webService\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+#8 C:\xampp\htdocs\webService\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\webService\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-30 17:23:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'api_quiz.domende' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `domende` (`domanda`, `punti`) VALUES (:domanda:, :punti:)', [...], false)
+ 2 APPPATH\Models\DomandaModel.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\DomandaController.php(38): App\Models\DomandaModel->create([...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 17:23:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'api_quiz.domende' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `domende` (`domanda`, `punti`) VALUES (\'domandaNuova\', \'10\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `domende` (`domanda`, `punti`) VALUES (\'domandaNuova\', \'10\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `domende` (`domanda`, `punti`) VALUES (:domanda:, :punti:)', [...], false)
+ 4 APPPATH\Models\DomandaModel.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\DomandaController.php(38): App\Models\DomandaModel->create([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 17:23:49 --> [Caused by] mysqli_sql_exception: Table 'api_quiz.domende' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `domende` (`domanda`, `punti`) VALUES (\'domandaNuova\', \'10\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `domende` (`domanda`, `punti`) VALUES (\'domandaNuova\', \'10\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `domende` (`domanda`, `punti`) VALUES (\'domandaNuova\', \'10\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `domende` (`domanda`, `punti`) VALUES (:domanda:, :punti:)', [...], false)
+ 5 APPPATH\Models\DomandaModel.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\DomandaController.php(38): App\Models\DomandaModel->create([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-30 17:31:01 --> mysqli_sql_exception: Column 'domanda' cannot be null in C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `do...', 0)
+#1 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `do...')
+#2 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `do...')
+#3 C:\xampp\htdocs\webService\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `do...', Array, false)
+#4 C:\xampp\htdocs\webService\app\Models\DomandaModel.php(33): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\webService\app\Controllers\DomandaController.php(38): App\Models\DomandaModel->create(Array)
+#6 C:\xampp\htdocs\webService\system\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+#7 C:\xampp\htdocs\webService\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+#8 C:\xampp\htdocs\webService\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\webService\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-30 17:31:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'domanda' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `domande` (`domanda`, `punti`) VALUES (:domanda:, :punti:)', [...], false)
+ 2 APPPATH\Models\DomandaModel.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\DomandaController.php(38): App\Models\DomandaModel->create([...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 17:31:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'domanda' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `domande` (`domanda`, `punti`) VALUES (NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `domande` (`domanda`, `punti`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `domande` (`domanda`, `punti`) VALUES (:domanda:, :punti:)', [...], false)
+ 4 APPPATH\Models\DomandaModel.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\DomandaController.php(38): App\Models\DomandaModel->create([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 17:31:01 --> [Caused by] mysqli_sql_exception: Column 'domanda' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `domande` (`domanda`, `punti`) VALUES (NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `domande` (`domanda`, `punti`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `domande` (`domanda`, `punti`) VALUES (NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `domande` (`domanda`, `punti`) VALUES (:domanda:, :punti:)', [...], false)
+ 5 APPPATH\Models\DomandaModel.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\DomandaController.php(38): App\Models\DomandaModel->create([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-30 17:31:41 --> mysqli_sql_exception: Column 'domanda' cannot be null in C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `do...', 0)
+#1 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `do...')
+#2 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `do...')
+#3 C:\xampp\htdocs\webService\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `do...', Array, false)
+#4 C:\xampp\htdocs\webService\app\Models\DomandaModel.php(33): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\webService\app\Controllers\DomandaController.php(38): App\Models\DomandaModel->create(Array)
+#6 C:\xampp\htdocs\webService\system\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+#7 C:\xampp\htdocs\webService\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+#8 C:\xampp\htdocs\webService\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\webService\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-30 17:31:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'domanda' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `domande` (`domanda`, `punti`) VALUES (:domanda:, :punti:)', [...], false)
+ 2 APPPATH\Models\DomandaModel.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\DomandaController.php(38): App\Models\DomandaModel->create([...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 17:31:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'domanda' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `domande` (`domanda`, `punti`) VALUES (NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `domande` (`domanda`, `punti`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `domande` (`domanda`, `punti`) VALUES (:domanda:, :punti:)', [...], false)
+ 4 APPPATH\Models\DomandaModel.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\DomandaController.php(38): App\Models\DomandaModel->create([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 17:31:41 --> [Caused by] mysqli_sql_exception: Column 'domanda' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `domande` (`domanda`, `punti`) VALUES (NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `domande` (`domanda`, `punti`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `domande` (`domanda`, `punti`) VALUES (NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `domande` (`domanda`, `punti`) VALUES (:domanda:, :punti:)', [...], false)
+ 5 APPPATH\Models\DomandaModel.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\DomandaController.php(38): App\Models\DomandaModel->create([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-30 17:31:54 --> mysqli_sql_exception: Column 'domanda' cannot be null in C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `do...', 0)
+#1 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `do...')
+#2 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `do...')
+#3 C:\xampp\htdocs\webService\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `do...', Array, false)
+#4 C:\xampp\htdocs\webService\app\Models\DomandaModel.php(33): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\webService\app\Controllers\DomandaController.php(38): App\Models\DomandaModel->create(Array)
+#6 C:\xampp\htdocs\webService\system\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+#7 C:\xampp\htdocs\webService\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+#8 C:\xampp\htdocs\webService\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\webService\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-30 17:31:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'domanda' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `domande` (`domanda`, `punti`) VALUES (:domanda:, :punti:)', [...], false)
+ 2 APPPATH\Models\DomandaModel.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\DomandaController.php(38): App\Models\DomandaModel->create([...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 17:31:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'domanda' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `domande` (`domanda`, `punti`) VALUES (NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `domande` (`domanda`, `punti`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `domande` (`domanda`, `punti`) VALUES (:domanda:, :punti:)', [...], false)
+ 4 APPPATH\Models\DomandaModel.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\DomandaController.php(38): App\Models\DomandaModel->create([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 17:31:54 --> [Caused by] mysqli_sql_exception: Column 'domanda' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `domande` (`domanda`, `punti`) VALUES (NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `domande` (`domanda`, `punti`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `domande` (`domanda`, `punti`) VALUES (NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `domande` (`domanda`, `punti`) VALUES (:domanda:, :punti:)', [...], false)
+ 5 APPPATH\Models\DomandaModel.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\DomandaController.php(38): App\Models\DomandaModel->create([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-30 17:42:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '10) VALUES (:10:)' at line 1 in C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ri...', 0)
+#1 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ri...')
+#2 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ri...')
+#3 C:\xampp\htdocs\webService\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ri...', Array, false)
+#4 C:\xampp\htdocs\webService\app\Models\RispostaModel.php(33): CodeIgniter\Database\BaseBuilder->insert('10')
+#5 C:\xampp\htdocs\webService\app\Controllers\DomandaController.php(46): App\Models\RispostaModel->create('10')
+#6 C:\xampp\htdocs\webService\system\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+#7 C:\xampp\htdocs\webService\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+#8 C:\xampp\htdocs\webService\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\webService\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-30 17:42:44 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '10) VALUES (:10:)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `risposte` (10) VALUES (:10:)', [...], false)
+ 2 APPPATH\Models\RispostaModel.php(33): CodeIgniter\Database\BaseBuilder->insert('10')
+ 3 APPPATH\Controllers\DomandaController.php(46): App\Models\RispostaModel->create('10')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 17:42:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '10) VALUES (:10:)' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `risposte` (10) VALUES (:10:)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `risposte` (10) VALUES (:10:)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `risposte` (10) VALUES (:10:)', [...], false)
+ 4 APPPATH\Models\RispostaModel.php(33): CodeIgniter\Database\BaseBuilder->insert('10')
+ 5 APPPATH\Controllers\DomandaController.php(46): App\Models\RispostaModel->create('10')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 17:42:44 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '10) VALUES (:10:)' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `risposte` (10) VALUES (:10:)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `risposte` (10) VALUES (:10:)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `risposte` (10) VALUES (:10:)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `risposte` (10) VALUES (:10:)', [...], false)
+ 5 APPPATH\Models\RispostaModel.php(33): CodeIgniter\Database\BaseBuilder->insert('10')
+ 6 APPPATH\Controllers\DomandaController.php(46): App\Models\RispostaModel->create('10')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 17:52:34 --> CodeIgniter\HTTP\Exceptions\HTTPException: Failed to parse JSON string. Error: Syntax error
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 588.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(588): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidJSON('Syntax error')
+ 2 SYSTEMPATH\HTTP\IncomingRequest.php(608): CodeIgniter\HTTP\IncomingRequest->getJSON(true)
+ 3 APPPATH\Controllers\DomandaController.php(44): CodeIgniter\HTTP\IncomingRequest->getJsonVar('risposte')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 17:54:42 --> CodeIgniter\HTTP\Exceptions\HTTPException: Failed to parse JSON string. Error: Syntax error
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 588.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(588): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidJSON('Syntax error')
+ 2 SYSTEMPATH\HTTP\IncomingRequest.php(608): CodeIgniter\HTTP\IncomingRequest->getJSON(true)
+ 3 APPPATH\Controllers\DomandaController.php(44): CodeIgniter\HTTP\IncomingRequest->getJsonVar('risposte', true)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 17:55:44 --> CodeIgniter\HTTP\Exceptions\HTTPException: Failed to parse JSON string. Error: Syntax error
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 588.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(588): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidJSON('Syntax error')
+ 2 SYSTEMPATH\HTTP\IncomingRequest.php(608): CodeIgniter\HTTP\IncomingRequest->getJSON(true)
+ 3 APPPATH\Controllers\DomandaController.php(44): CodeIgniter\HTTP\IncomingRequest->getJsonVar('risposte', true)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 17:57:44 --> ErrorException: Undefined variable $request
+in APPPATH\Controllers\DomandaController.php on line 44.
+ 1 APPPATH\Controllers\DomandaController.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'C:\\xampp\\htdocs\\webService\\app\\Controllers\\DomandaController.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 17:58:11 --> Error: Class "App\Controllers\Controller" not found
+in APPPATH\Controllers\DomandaController.php on line 8.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\webService\\app\\Controllers\\DomandaController.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DomandaController')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DomandaController')
+ 5 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\DomandaController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 18:00:25 --> Error: Class "App\Controllers\Controller" not found
+in APPPATH\Controllers\DomandaController.php on line 8.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(311): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\webService\\app\\Controllers\\DomandaController.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DomandaController')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DomandaController')
+ 5 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\DomandaController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 18:00:42 --> CodeIgniter\HTTP\Exceptions\HTTPException: Failed to parse JSON string. Error: Syntax error
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 588.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(588): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidJSON('Syntax error')
+ 2 SYSTEMPATH\HTTP\IncomingRequest.php(608): CodeIgniter\HTTP\IncomingRequest->getJSON(true)
+ 3 APPPATH\Controllers\DomandaController.php(44): CodeIgniter\HTTP\IncomingRequest->getJsonVar('risposte', true)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 18:04:38 --> CodeIgniter\HTTP\Exceptions\HTTPException: Failed to parse JSON string. Error: Syntax error
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 588.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(588): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidJSON('Syntax error')
+ 2 SYSTEMPATH\HTTP\IncomingRequest.php(608): CodeIgniter\HTTP\IncomingRequest->getJSON(true)
+ 3 APPPATH\Controllers\DomandaController.php(44): CodeIgniter\HTTP\IncomingRequest->getJsonVar('risposte', true)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-30 18:05:04 --> mysqli_sql_exception: Column 'risposta' cannot be null in C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ri...', 0)
+#1 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ri...')
+#2 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ri...')
+#3 C:\xampp\htdocs\webService\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ri...', Array, false)
+#4 C:\xampp\htdocs\webService\app\Models\RispostaModel.php(33): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\webService\app\Controllers\RispostaController.php(34): App\Models\RispostaModel->create(Array)
+#6 C:\xampp\htdocs\webService\system\CodeIgniter.php(941): App\Controllers\RispostaController->create()
+#7 C:\xampp\htdocs\webService\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RispostaController))
+#8 C:\xampp\htdocs\webService\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\webService\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-30 18:05:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'risposta' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `risposte` (`risposta`, `corretta`) VALUES (:risposta:, :corretta:)', [...], false)
+ 2 APPPATH\Models\RispostaModel.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\RispostaController.php(34): App\Models\RispostaModel->create([...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RispostaController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RispostaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 18:05:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'risposta' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `risposte` (`risposta`, `corretta`) VALUES (NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `risposte` (`risposta`, `corretta`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `risposte` (`risposta`, `corretta`) VALUES (:risposta:, :corretta:)', [...], false)
+ 4 APPPATH\Models\RispostaModel.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\RispostaController.php(34): App\Models\RispostaModel->create([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RispostaController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RispostaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 18:05:04 --> [Caused by] mysqli_sql_exception: Column 'risposta' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `risposte` (`risposta`, `corretta`) VALUES (NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `risposte` (`risposta`, `corretta`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `risposte` (`risposta`, `corretta`) VALUES (NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `risposte` (`risposta`, `corretta`) VALUES (:risposta:, :corretta:)', [...], false)
+ 5 APPPATH\Models\RispostaModel.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\RispostaController.php(34): App\Models\RispostaModel->create([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RispostaController->create()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RispostaController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-30 18:06:52 --> mysqli_sql_exception: Column 'risposta' cannot be null in C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\webService\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ri...', 0)
+#1 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ri...')
+#2 C:\xampp\htdocs\webService\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ri...')
+#3 C:\xampp\htdocs\webService\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ri...', Array, false)
+#4 C:\xampp\htdocs\webService\app\Models\RispostaModel.php(33): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\webService\app\Controllers\RispostaController.php(34): App\Models\RispostaModel->create(Array)
+#6 C:\xampp\htdocs\webService\system\CodeIgniter.php(941): App\Controllers\RispostaController->create()
+#7 C:\xampp\htdocs\webService\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RispostaController))
+#8 C:\xampp\htdocs\webService\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\webService\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-30 18:06:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'risposta' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `risposte` (`risposta`, `corretta`) VALUES (:risposta:, :corretta:)', [...], false)
+ 2 APPPATH\Models\RispostaModel.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\RispostaController.php(34): App\Models\RispostaModel->create([...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RispostaController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RispostaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 18:06:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'risposta' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `risposte` (`risposta`, `corretta`) VALUES (NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `risposte` (`risposta`, `corretta`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `risposte` (`risposta`, `corretta`) VALUES (:risposta:, :corretta:)', [...], false)
+ 4 APPPATH\Models\RispostaModel.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\RispostaController.php(34): App\Models\RispostaModel->create([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RispostaController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RispostaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 18:06:52 --> [Caused by] mysqli_sql_exception: Column 'risposta' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `risposte` (`risposta`, `corretta`) VALUES (NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `risposte` (`risposta`, `corretta`) VALUES (NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `risposte` (`risposta`, `corretta`) VALUES (NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `risposte` (`risposta`, `corretta`) VALUES (:risposta:, :corretta:)', [...], false)
+ 5 APPPATH\Models\RispostaModel.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\RispostaController.php(34): App\Models\RispostaModel->create([...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\RispostaController->create()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RispostaController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 18:07:28 --> CodeIgniter\HTTP\Exceptions\HTTPException: Failed to parse JSON string. Error: Syntax error
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 588.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(588): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidJSON('Syntax error')
+ 2 SYSTEMPATH\HTTP\IncomingRequest.php(608): CodeIgniter\HTTP\IncomingRequest->getJSON(true)
+ 3 APPPATH\Controllers\DomandaController.php(44): CodeIgniter\HTTP\IncomingRequest->getJsonVar('risposte', true)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 18:09:33 --> ErrorException: Undefined variable $request
+in APPPATH\Controllers\DomandaController.php on line 44.
+ 1 APPPATH\Controllers\DomandaController.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'C:\\xampp\\htdocs\\webService\\app\\Controllers\\DomandaController.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 18:10:30 --> CodeIgniter\HTTP\Exceptions\HTTPException: Failed to parse JSON string. Error: Syntax error
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 588.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(588): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidJSON('Syntax error')
+ 2 SYSTEMPATH\HTTP\IncomingRequest.php(608): CodeIgniter\HTTP\IncomingRequest->getJSON(true)
+ 3 APPPATH\Controllers\DomandaController.php(45): CodeIgniter\HTTP\IncomingRequest->getJsonVar('risposte', true)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 18:11:05 --> CodeIgniter\HTTP\Exceptions\HTTPException: Failed to parse JSON string. Error: Syntax error
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 588.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(588): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidJSON('Syntax error')
+ 2 SYSTEMPATH\HTTP\IncomingRequest.php(608): CodeIgniter\HTTP\IncomingRequest->getJSON(true)
+ 3 APPPATH\Controllers\DomandaController.php(45): CodeIgniter\HTTP\IncomingRequest->getJsonVar('risposte', true)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 18:13:30 --> CodeIgniter\HTTP\Exceptions\HTTPException: Failed to parse JSON string. Error: Syntax error
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 588.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(588): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidJSON('Syntax error')
+ 2 SYSTEMPATH\HTTP\IncomingRequest.php(608): CodeIgniter\HTTP\IncomingRequest->getJSON(true)
+ 3 APPPATH\Controllers\DomandaController.php(46): CodeIgniter\HTTP\IncomingRequest->getJsonVar('risposte', true)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 18:13:47 --> CodeIgniter\HTTP\Exceptions\HTTPException: Failed to parse JSON string. Error: Syntax error
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 588.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(588): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidJSON('Syntax error')
+ 2 SYSTEMPATH\HTTP\IncomingRequest.php(608): CodeIgniter\HTTP\IncomingRequest->getJSON(true)
+ 3 APPPATH\Controllers\DomandaController.php(46): CodeIgniter\HTTP\IncomingRequest->getJsonVar('risposte', true)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 18:14:09 --> CodeIgniter\HTTP\Exceptions\HTTPException: Failed to parse JSON string. Error: Syntax error
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 588.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(588): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidJSON('Syntax error')
+ 2 SYSTEMPATH\HTTP\IncomingRequest.php(608): CodeIgniter\HTTP\IncomingRequest->getJSON(true)
+ 3 APPPATH\Controllers\DomandaController.php(46): CodeIgniter\HTTP\IncomingRequest->getJsonVar('risposte', true)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 18:14:21 --> CodeIgniter\HTTP\Exceptions\HTTPException: Failed to parse JSON string. Error: Syntax error
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 588.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(588): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidJSON('Syntax error')
+ 2 SYSTEMPATH\HTTP\IncomingRequest.php(608): CodeIgniter\HTTP\IncomingRequest->getJSON(true)
+ 3 APPPATH\Controllers\DomandaController.php(46): CodeIgniter\HTTP\IncomingRequest->getJsonVar('risposte', true)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 18:15:28 --> ErrorException: filter_var(): Unknown filter with ID 1
+in SYSTEMPATH\HTTP\RequestTrait.php on line 328.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filter_var(): Unknown filter with ID 1', 'C:\\xampp\\htdocs\\webService\\system\\HTTP\\RequestTrait.php', 328)
+ 2 SYSTEMPATH\HTTP\RequestTrait.php(328): filter_var('{"risposta":"2", "corretta":"1","risposta":"10", "corretta":"0"}', 1, 0)
+ 3 SYSTEMPATH\HTTP\IncomingRequest.php(559): CodeIgniter\HTTP\Request->fetchGlobal('request', 'risposte', 1, 0)
+ 4 APPPATH\Controllers\DomandaController.php(44): CodeIgniter\HTTP\IncomingRequest->getVar('risposte', true)
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 18:23:32 --> ErrorException: foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\DomandaController.php on line 47.
+ 1 APPPATH\Controllers\DomandaController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\webService\\app\\Controllers\\DomandaController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 18:31:32 --> ErrorException: foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\DomandaController.php on line 47.
+ 1 APPPATH\Controllers\DomandaController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\webService\\app\\Controllers\\DomandaController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 18:44:40 --> CodeIgniter\HTTP\Exceptions\HTTPException: Failed to parse JSON string. Error: Syntax error
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 588.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(588): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidJSON('Syntax error')
+ 2 SYSTEMPATH\HTTP\IncomingRequest.php(608): CodeIgniter\HTTP\IncomingRequest->getJSON(true)
+ 3 APPPATH\Controllers\DomandaController.php(44): CodeIgniter\HTTP\IncomingRequest->getJsonVar('risposte', true)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 18:45:58 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Controllers\DomandaController.php on line 49.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 18:49:20 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Controllers\DomandaController.php on line 49.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 19:18:37 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Controllers\DomandaController.php on line 49.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 19:19:14 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Controllers\DomandaController.php on line 49.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 19:20:06 --> CodeIgniter\HTTP\Exceptions\HTTPException: Failed to parse JSON string. Error: Syntax error
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 588.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(588): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidJSON('Syntax error')
+ 2 SYSTEMPATH\HTTP\IncomingRequest.php(608): CodeIgniter\HTTP\IncomingRequest->getJSON(true)
+ 3 APPPATH\Controllers\DomandaController.php(44): CodeIgniter\HTTP\IncomingRequest->getJsonVar('risposte', true)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 19:21:03 --> CodeIgniter\HTTP\Exceptions\HTTPException: Failed to parse JSON string. Error: Syntax error
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 588.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(588): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidJSON('Syntax error')
+ 2 SYSTEMPATH\HTTP\IncomingRequest.php(608): CodeIgniter\HTTP\IncomingRequest->getJSON(true)
+ 3 APPPATH\Controllers\DomandaController.php(44): CodeIgniter\HTTP\IncomingRequest->getJsonVar('risposte', true)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 19:22:10 --> CodeIgniter\HTTP\Exceptions\HTTPException: Failed to parse JSON string. Error: Syntax error
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 588.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(588): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidJSON('Syntax error')
+ 2 SYSTEMPATH\HTTP\IncomingRequest.php(608): CodeIgniter\HTTP\IncomingRequest->getJSON(true)
+ 3 APPPATH\Controllers\DomandaController.php(44): CodeIgniter\HTTP\IncomingRequest->getJsonVar('risposte', true)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 19:22:56 --> CodeIgniter\HTTP\Exceptions\HTTPException: Failed to parse JSON string. Error: Syntax error
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 588.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(588): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidJSON('Syntax error')
+ 2 SYSTEMPATH\HTTP\IncomingRequest.php(608): CodeIgniter\HTTP\IncomingRequest->getJSON(true)
+ 3 APPPATH\Controllers\DomandaController.php(44): CodeIgniter\HTTP\IncomingRequest->getJsonVar('risposte', true)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 19:23:37 --> CodeIgniter\HTTP\Exceptions\HTTPException: Failed to parse JSON string. Error: Syntax error
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 588.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(588): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidJSON('Syntax error')
+ 2 SYSTEMPATH\HTTP\IncomingRequest.php(608): CodeIgniter\HTTP\IncomingRequest->getJSON(true)
+ 3 APPPATH\Controllers\DomandaController.php(44): CodeIgniter\HTTP\IncomingRequest->getJsonVar('risposte', true)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 19:25:47 --> CodeIgniter\HTTP\Exceptions\HTTPException: Failed to parse JSON string. Error: Syntax error
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 588.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(588): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidJSON('Syntax error')
+ 2 SYSTEMPATH\HTTP\IncomingRequest.php(608): CodeIgniter\HTTP\IncomingRequest->getJSON(true)
+ 3 APPPATH\Controllers\DomandaController.php(44): CodeIgniter\HTTP\IncomingRequest->getJsonVar('risposte', true)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 19:26:47 --> ErrorException: filter_var(): Unknown filter with ID 1
+in SYSTEMPATH\HTTP\RequestTrait.php on line 328.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'filter_var(): Unknown filter with ID 1', 'C:\\xampp\\htdocs\\webService\\system\\HTTP\\RequestTrait.php', 328)
+ 2 SYSTEMPATH\HTTP\RequestTrait.php(328): filter_var('[{"risposta":"2", "corretta":"1"},{"risposta":"10", "corretta":"0"}]', 1, 0)
+ 3 SYSTEMPATH\HTTP\IncomingRequest.php(559): CodeIgniter\HTTP\Request->fetchGlobal('request', 'risposte', 1, 0)
+ 4 APPPATH\Controllers\DomandaController.php(44): CodeIgniter\HTTP\IncomingRequest->getVar('risposte', true)
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 19:28:47 --> ErrorException: Undefined variable $request
+in APPPATH\Controllers\DomandaController.php on line 44.
+ 1 APPPATH\Controllers\DomandaController.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'C:\\xampp\\htdocs\\webService\\app\\Controllers\\DomandaController.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 19:29:57 --> CodeIgniter\HTTP\Exceptions\HTTPException: Failed to parse JSON string. Error: Syntax error
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 588.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(588): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidJSON('Syntax error')
+ 2 SYSTEMPATH\HTTP\IncomingRequest.php(608): CodeIgniter\HTTP\IncomingRequest->getJSON(true)
+ 3 APPPATH\Controllers\DomandaController.php(45): CodeIgniter\HTTP\IncomingRequest->getJsonVar('risposte', true)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 19:35:15 --> ErrorException: Undefined variable $row
+in APPPATH\Controllers\DomandaController.php on line 65.
+ 1 APPPATH\Controllers\DomandaController.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\xampp\\htdocs\\webService\\app\\Controllers\\DomandaController.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 19:39:58 --> ErrorException: Undefined variable $request
+in APPPATH\Controllers\DomandaController.php on line 46.
+ 1 APPPATH\Controllers\DomandaController.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'C:\\xampp\\htdocs\\webService\\app\\Controllers\\DomandaController.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 19:40:17 --> ErrorException: Undefined variable $request
+in APPPATH\Controllers\DomandaController.php on line 46.
+ 1 APPPATH\Controllers\DomandaController.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'C:\\xampp\\htdocs\\webService\\app\\Controllers\\DomandaController.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 19:40:39 --> ErrorException: Undefined variable $request
+in APPPATH\Controllers\DomandaController.php on line 46.
+ 1 APPPATH\Controllers\DomandaController.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $request', 'C:\\xampp\\htdocs\\webService\\app\\Controllers\\DomandaController.php', 46)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 19:41:06 --> ErrorException: Undefined variable $row
+in APPPATH\Controllers\DomandaController.php on line 63.
+ 1 APPPATH\Controllers\DomandaController.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\xampp\\htdocs\\webService\\app\\Controllers\\DomandaController.php', 63)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 19:43:10 --> ErrorException: foreach() argument must be of type array|object, string given
+in APPPATH\Controllers\DomandaController.php on line 49.
+ 1 APPPATH\Controllers\DomandaController.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\webService\\app\\Controllers\\DomandaController.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 19:43:36 --> CodeIgniter\HTTP\Exceptions\HTTPException: Failed to parse JSON string. Error: Syntax error
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 588.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(588): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidJSON('Syntax error')
+ 2 SYSTEMPATH\HTTP\IncomingRequest.php(608): CodeIgniter\HTTP\IncomingRequest->getJSON(true)
+ 3 APPPATH\Controllers\DomandaController.php(46): CodeIgniter\HTTP\IncomingRequest->getJsonVar('risposte', true)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 19:44:14 --> CodeIgniter\HTTP\Exceptions\HTTPException: Failed to parse JSON string. Error: Syntax error
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 588.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(588): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidJSON('Syntax error')
+ 2 SYSTEMPATH\HTTP\IncomingRequest.php(608): CodeIgniter\HTTP\IncomingRequest->getJSON(true)
+ 3 APPPATH\Controllers\DomandaController.php(46): CodeIgniter\HTTP\IncomingRequest->getJsonVar('risposte')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 19:44:42 --> Error: Cannot use object of type stdClass as array
+in APPPATH\Controllers\DomandaController.php on line 50.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 19:48:10 --> ErrorException: foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\DomandaController.php on line 49.
+ 1 APPPATH\Controllers\DomandaController.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\webService\\app\\Controllers\\DomandaController.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 19:48:32 --> ErrorException: foreach() argument must be of type array|object, null given
+in APPPATH\Controllers\DomandaController.php on line 49.
+ 1 APPPATH\Controllers\DomandaController.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\webService\\app\\Controllers\\DomandaController.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 19:48:54 --> ParseError: syntax error, unexpected token "return", expecting "function" or "const"
+in APPPATH\Controllers\DomandaController.php on line 63.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\webService\\app\\Controllers\\DomandaController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DomandaController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DomandaController')
+ 4 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\DomandaController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 19:50:35 --> ErrorException: Array to string conversion
+in APPPATH\Controllers\DomandaController.php on line 47.
+ 1 APPPATH\Controllers\DomandaController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\webService\\app\\Controllers\\DomandaController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 20:02:27 --> ErrorException: Undefined variable $route
+in APPPATH\Config\Routes.php on line 13.
+ 1 APPPATH\Config\Routes.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $route', 'C:\\xampp\\htdocs\\webService\\app\\Config\\Routes.php', 13)
+ 2 SYSTEMPATH\Router\RouteCollection.php(345): require('C:\\xampp\\htdocs\\webService\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 20:02:39 --> ErrorException: Undefined property: CodeIgniter\HTTP\IncomingRequest::$getJSON
+in APPPATH\Controllers\QuizController.php on line 28.
+ 1 APPPATH\Controllers\QuizController.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\HTTP\\IncomingRequest::$getJSON', 'C:\\xampp\\htdocs\\webService\\app\\Controllers\\QuizController.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 20:03:09 --> ErrorException: Undefined property: CodeIgniter\HTTP\IncomingRequest::$getJSON
+in APPPATH\Controllers\QuizController.php on line 28.
+ 1 APPPATH\Controllers\QuizController.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\HTTP\\IncomingRequest::$getJSON', 'C:\\xampp\\htdocs\\webService\\app\\Controllers\\QuizController.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 20:03:29 --> CodeIgniter\HTTP\Exceptions\HTTPException: Failed to parse JSON string. Error: Syntax error
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 588.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(588): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidJSON('Syntax error')
+ 2 APPPATH\Controllers\QuizController.php(28): CodeIgniter\HTTP\IncomingRequest->getJSON()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->create()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 20:07:11 --> CodeIgniter\HTTP\Exceptions\HTTPException: Failed to parse JSON string. Error: Syntax error
+in SYSTEMPATH\HTTP\IncomingRequest.php on line 588.
+ 1 SYSTEMPATH\HTTP\IncomingRequest.php(588): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidJSON('Syntax error')
+ 2 SYSTEMPATH\HTTP\IncomingRequest.php(608): CodeIgniter\HTTP\IncomingRequest->getJSON(true)
+ 3 APPPATH\Controllers\QuizController.php(28): CodeIgniter\HTTP\IncomingRequest->getJsonVar('domande')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 20:12:12 --> Error: Object of class stdClass could not be converted to string
+in APPPATH\Controllers\QuizController.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->create()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 20:27:39 --> Error: Class "App\Controllers\DomandaModel" not found
+in APPPATH\Controllers\DomandaController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->get()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 20:27:59 --> Error: Class "App\Controllers\DomandaModel" not found
+in APPPATH\Controllers\DomandaController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->get()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 20:32:19 --> TypeError: get_object_vars(): Argument #1 ($object) must be of type object, array given
+in APPPATH\Controllers\DomandaController.php on line 37.
+ 1 APPPATH\Controllers\DomandaController.php(37): get_object_vars([...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 20:37:58 --> TypeError: array_slice(): Argument #1 ($array) must be of type array, stdClass given
+in APPPATH\Controllers\DomandaController.php on line 38.
+ 1 APPPATH\Controllers\DomandaController.php(38): array_slice(Object(stdClass), 0, 2)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 20:38:19 --> TypeError: get_object_vars(): Argument #1 ($object) must be of type object, array given
+in APPPATH\Controllers\DomandaController.php on line 40.
+ 1 APPPATH\Controllers\DomandaController.php(40): get_object_vars([...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 20:39:29 --> TypeError: get_object_vars(): Argument #1 ($object) must be of type object, array given
+in APPPATH\Controllers\DomandaController.php on line 42.
+ 1 APPPATH\Controllers\DomandaController.php(42): get_object_vars([...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 20:53:32 --> Error: Cannot use a scalar value as an array
+in APPPATH\Controllers\DomandaController.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\DomandaController->create()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DomandaController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 21:13:25 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(662): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\QuizController.php(31): CodeIgniter\Model->__call('create', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 21:21:32 --> Error: Class "App\Models\DomandeModel" not found
+in APPPATH\Controllers\QuizController.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->create()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 21:21:46 --> Error: Class "App\Models\DomandeModel" not found
+in APPPATH\Controllers\QuizController.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->create()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-30 21:22:19 --> CodeIgniter\Database\Exceptions\DatabaseException: You must use the "set" method to insert an entry.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2349.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2289): CodeIgniter\Database\BaseBuilder->validateInsert()
+ 2 APPPATH\Models\DomandaModel.php(33): CodeIgniter\Database\BaseBuilder->insert(null)
+ 3 APPPATH\Controllers\QuizController.php(40): App\Models\DomandaModel->create(null)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\QuizController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\QuizController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

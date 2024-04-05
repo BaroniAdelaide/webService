@@ -7,5 +7,30 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 
-$routes->get("/quizzes", "QuizController::get");
-$routes->get("/quiz/(:num)", "QuizController::get/$1");
+$routes->get("quizzes", "QuizController::get");
+$routes->get("quiz/(:num)", "QuizController::get/$1");
+//create
+$routes->post("quiz", "QuizController::create");
+//put (punteggio, nome, descrizione)
+$routes->put("quiz", "QuizController::put");
+//delete
+
+
+//domande
+//read
+$routes->get("domande", "DomandaController::get");
+$routes->get("domanda/(:num)", "DomandaController::get/$1");
+//create
+$routes->post("domanda", "DomandaController::create");
+//put (domanda, punti)
+$routes->put("domanda", "DomandaController::put");
+
+//risposte
+//read
+$routes->get("risposte", "RispostaController::get");
+$routes->get("risposta/(:num)", "RispostaController::get/$1");
+//create
+$routes->post("risposta", "RispostaController::create");
+//put
+$routes->put("risposta", "RispostaController::put");
+

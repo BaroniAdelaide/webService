@@ -29,4 +29,20 @@ class QuizModel extends Model
 
         return $result;
     }
+
+
+    public function create(&$row){
+        $db = db_connect();
+        $db->table("quiz")->insert($row);
+        $id = $db->insertId();
+        $row["id_quiz"] = $id;
+        $row["domande"] = array();
+    }
+
+    public function put($quiz){
+        $db = db_connect();
+        $db->table("quiz")->where("id_quiz", $quiz["id_quiz"])->update($quiz);
+        $data = $db->table("quiz")->where("id_quiz", $quiz["id_quiz"])->get()->getResultArray();
+        return $data[0];
+    }
 }
