@@ -20,8 +20,7 @@ class RispostaController extends BaseController
         $data = json_encode($data);
         return $this->response
             ->setStatusCode(200)
-            ->setContentType("application/json")
-            ->setBody($data);
+            ->setJSON($data);
     }
 
     public function create(){
@@ -35,7 +34,7 @@ class RispostaController extends BaseController
 
         return $this->response
             ->setStatusCode(200, "Risposta aggiunta")
-            ->setJson(json_encode($row));
+            ->setJSON($row);
     }
     
     public function put(){
@@ -45,6 +44,6 @@ class RispostaController extends BaseController
         
         return $this->response
             ->setStatusCode(200)
-            ->setBody(json_encode($updatedData));
+            ->setJSON($updatedData);
     }
 }

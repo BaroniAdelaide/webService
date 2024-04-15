@@ -21,8 +21,7 @@ class DomandaController extends BaseController
             $data = json_encode($data);
             return $this->response
                 ->setStatusCode(200)
-                ->setContentType("application/json")
-                ->setBody($data);
+                ->setJSON($data);
         }
         else{
             return $this->response->setStatusCode(404, "Nessun record corrisponde all'id");
@@ -48,7 +47,7 @@ class DomandaController extends BaseController
 
         return $this->response
             ->setStatusCode(200)
-            ->setJson(json_encode($domanda));
+            ->setJSON($domanda);
     }
 
 
@@ -59,6 +58,6 @@ class DomandaController extends BaseController
         
         return $this->response
             ->setStatusCode(200)
-            ->setBody(json_encode($updatedData));
+            ->setJSON($updatedData);
     }
 }

@@ -1,6 +1,7 @@
 <?php namespace App\Models;
 
 use CodeIgniter\Model;
+use App\Models\QuizDomandeModel;
 
 class DomandaModel extends Model
 {
@@ -39,18 +40,13 @@ class DomandaModel extends Model
         return $data[0];
     }
 
-    public function delete($id = null, $idQuiz = null, bool $purge = false){
-        $db = db_connect();
-        if($idQuiz){
-            //$db->table("domande")->select("quiz_domande.*, domande.*")->join("quiz_domande", "quiz_domande.id_domanda = domande.id_domanda")->delete(["quiz_domande.id_quiz" => $idQuiz]);
-            //aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-        
-        
-        
-        
+    public function delete($idDomanda = null, $idQuiz = null, bool $purge = false){
+        if($idDomanda){
+            $db->delete(["id_domanda" => $id]);
         }
         else{
-            $db->delete(["id_domanda" => $id]);
+            $QDmodel = new QuizDomandeModel();
+            $idDomande = $QDmodel->get($idQuiz);
         }
     }
 }

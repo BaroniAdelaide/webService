@@ -64,7 +64,7 @@ class QuizController extends BaseController
         
         return $this->response
             ->setStatusCode(200)
-            ->setBody(json_encode($quiz));
+            ->setJSON($quiz);
     }
 
     public function put(){
@@ -74,14 +74,14 @@ class QuizController extends BaseController
         
         return $this->response
             ->setStatusCode(200)
-            ->setBody(json_encode($updatedData));
+            ->setJSON($updatedData);
     }
 
     public function delete($id){
         $quizModel = new QuizModel();
-        $domandaModel = new DomandaModel();
-        $quizModel->delete($id);
+        $domandaModel = new QuizDomandaModel();
         $domandaModel->delete(null, $id);
+        $quizModel->delete($id);
 
     }
 }
