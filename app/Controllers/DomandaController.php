@@ -21,7 +21,6 @@ class DomandaController extends BaseController
             $data = json_encode($data);
             return $this->response
                 ->setStatusCode(200)
-                ->setHeader("Access-Control-Allow-Origin: *")
                 ->setJSON($data);
         }
         else{
@@ -48,7 +47,6 @@ class DomandaController extends BaseController
 
         return $this->response
             ->setStatusCode(200)
-            ->setHeader("Access-Control-Allow-Origin: *")
             ->setJSON($domanda);
     }
 
@@ -60,7 +58,6 @@ class DomandaController extends BaseController
         
         return $this->response
             ->setStatusCode(200)
-            ->setHeader("Access-Control-Allow-Origin: *")
             ->setJSON($updatedData);
     }
 }

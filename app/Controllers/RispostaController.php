@@ -44,7 +44,6 @@ class RispostaController extends BaseController
         
         return $this->response
             ->setStatusCode(200)
-            ->setHeader("Access-Control-Allow-Origin: *")
             ->setJSON($updatedData);
     }
 }
