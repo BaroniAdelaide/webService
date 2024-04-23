@@ -25,6 +25,7 @@ class RispostaController extends BaseController
 
     public function create(){
         $row = [
+            "id_domanda" => $this->request->getVar("id_domanda"),
             "risposta" => $this->request->getVar("risposta"),
             "corretta" => $this->request->getVar("corretta")
         ];
@@ -45,5 +46,13 @@ class RispostaController extends BaseController
         return $this->response
             ->setStatusCode(200)
             ->setJSON($updatedData);
+    }
+
+    public function delete($id){
+        $rispostaModel = new RispostaModel();
+        $rispostaModel->deleteWhere($id);
+        return $this->response
+            ->setStatusCode(200);
+
     }
 }

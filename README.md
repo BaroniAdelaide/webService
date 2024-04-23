@@ -58,6 +58,7 @@ POST /domanda
 esempio body:
 ```
 {
+"id_quiz": "1",
 "domanda": "test",
     "punti": "5",
     "risposte": [
@@ -77,6 +78,7 @@ POST /risposta
 esmepio body:
 ```
 {
+    "id_domanda": "2",
     "risposta": "test",
 	"corretta": "0"
 }

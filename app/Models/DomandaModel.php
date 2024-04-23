@@ -7,7 +7,7 @@ class DomandaModel extends Model
 {
 
     protected $table = "domande";
-    protected $allowedFields = ["domanda", "punti"];
+    protected $allowedFields = ["id_quiz", "domanda", "punti"];
 
     function get($id = null){
         $db = db_connect();
@@ -25,6 +25,12 @@ class DomandaModel extends Model
         return $result;
     }
 
+    function getWhereQuiz($id){
+        $db = db_connect();
+        $data = $db->table("domande")->where("id_quiz", $id)->get()->getResultArray();
+        return $data;
+    }
+
     function create(&$row){
         $db = db_connect();
         $db->table("domande")->insert($row);
@@ -40,13 +46,8 @@ class DomandaModel extends Model
         return $data[0];
     }
 
-    public function delete($idDomanda = null, $idQuiz = null, bool $purge = false){
-        if($idDomanda){
-            $db->delete(["id_domanda" => $id]);
-        }
-        else{
-            $QDmodel = new QuizDomandeModel();
-            $idDomande = $QDmodel->get($idQuiz);
-        }
+    public function deleteWhere($id){
+        $db = db_connect();
+        $db->table("domande")->delete(["id_domanda" => $id]);
     }
 }

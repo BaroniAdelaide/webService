@@ -7,7 +7,8 @@ class RispostaModel extends Model
 
     protected $table = 'risposte';
     protected $primaryKey = 'id_risposta';
-    protected $allowedFields = ["id_risposta", "risposta", "corretta"];
+    protected $allowedFields = ["id_domanda", "risposta", "corretta"];
+    protected $useSoftDelete = false;
 
     function get($id = null){
         $db = db_connect();
@@ -25,7 +26,13 @@ class RispostaModel extends Model
         return $result;
     }
 
-    function create(& $row){
+    function getWhereDomanda($id){
+        $db = db_connect();
+        $data = $db->table("risposte")->where("id_risposta", $id)->get()->getResultArray();
+        return $data;
+    }
+
+    function create(&$row){
         $db = db_connect();
         $db->table("risposte")->insert($row);
         $id = $db->insertId();
@@ -40,13 +47,8 @@ class RispostaModel extends Model
         return $data[0];
     }
 
-    public function delete($id = null, $idDomanda = null, bool $purge = false){
+    public function deleteWhere($id){
         $db = db_connect();
-        if($idDomanda){
-            //$db->table("risposte")->join("domanda_risposte", "domanda_risposte.id_risposta = risposte.id_risposta")->where("domanda_risposte.id_domanda", $idDomanda)->delete();
-        }
-        else{
-            $db->delete(["id_risposta" => $id]);
-        }
+        $db->table("risposte")->delete(["id_risposta" => $id]);
     }
 }

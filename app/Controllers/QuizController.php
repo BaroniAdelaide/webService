@@ -4,8 +4,6 @@ namespace App\Controllers;
 use App\Models\QuizModel;
 use App\Models\DomandaModel;
 use App\Models\RispostaModel;
-use App\Models\QuizDomandaModel;
-use App\Models\DomandaRispostaModel;
 
 class QuizController extends BaseController
 {
@@ -15,6 +13,12 @@ class QuizController extends BaseController
         $quizModel = new QuizModel();
         if($id){
             $data = $quizModel->get($id);
+            $domandaModel = new DomandaModel();
+            $rispostaModel = new RispostaModel();
+            $data["domande"] = $domandaModel->getWhereQuiz($id);
+            foreach ($data["domande"] as $domanda) {
+                $domanda["risposte"] = $rispostaModel->getWhereDomanda($domanda["id_domanda"]);
+            }
         }
         else{
             $data = $quizModel->get();
@@ -29,8 +33,6 @@ class QuizController extends BaseController
         $quizModel = new QuizModel();
         $domandaModel = new DomandaModel();
         $rispostaModel = new RispostaModel();
-        $quizDomandaModel = new QuizDomandaModel();
-        $domandaRispostaModel = new DomandaRispostaModel();
         $body = get_object_vars(json_decode($this->request->getBody()));
 
         //inserisci quiz
@@ -41,22 +43,15 @@ class QuizController extends BaseController
             //inserisci domanda
             $domandaRaw = get_object_vars($obj);
             $domanda = array_slice($domandaRaw, 0, 2);
+            $domanda["id_quiz"] = $quiz["id_quiz"];
             $domandaModel->create($domanda);
-
-            //inserisci quiz_domande
-            $quizDomanda = array("id_quiz" => $quiz["id_quiz"], "id_domanda" => $domanda["id_domanda"]);
-            $quizDomandaModel->create($quizDomanda);
 
             foreach($domandaRaw["risposte"] as $obj){
                 //inserisci risposta
                 $risposta = get_object_vars($obj);
+                $risposta["id_domanda"] = $domanda["id_domanda"];
                 $rispostaModel->create($risposta);
                 array_push($domanda["risposte"], $risposta);
-
-                //inserisci domanda_risposte
-                $domandaRisposta = array("id_domanda" => $domanda["id_domanda"], "id_risposta" => $risposta["id_risposta"]);
-                $domandaRispostaModel->create($domandaRisposta);
-
             }
             array_push($quiz["domande"], $domanda);
         }
@@ -79,9 +74,9 @@ class QuizController extends BaseController
 
     public function delete($id){
         $quizModel = new QuizModel();
-        $domandaModel = new QuizDomandaModel();
-        $domandaModel->delete(null, $id);
-        $quizModel->delete($id);
+        $quizModel->deleteWhere($id);
+        return $this->response
+            ->setStatusCode(200);
 
     }
 }

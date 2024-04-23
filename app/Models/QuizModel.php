@@ -42,7 +42,7 @@ class QuizModel extends Model
         return $data[0];
     }
 
-    public function delete($id = null, bool $purge = false){
+    public function deleteWhere($id){
         $db = db_connect();
         $db->table("quiz")->delete(["id_quiz" => $id]);
     }

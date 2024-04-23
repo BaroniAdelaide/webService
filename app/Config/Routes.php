@@ -25,6 +25,8 @@ $routes->get("domanda/(:num)", "DomandaController::get/$1");
 $routes->post("domanda", "DomandaController::create");
 //put (domanda, punti)
 $routes->put("domanda", "DomandaController::put");
+//delete
+$routes->delete("domanda/(:num)", "DomandaController::delete/$1");
 
 //risposte
 //read
@@ -34,4 +36,6 @@ $routes->get("risposta/(:num)", "RispostaController::get/$1");
 $routes->post("risposta", "RispostaController::create");
 //put
 $routes->put("risposta", "RispostaController::put");
+//delete
+$routes->delete("risposta/(:num)", "RispostaController::delete/$1");
 

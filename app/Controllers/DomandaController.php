@@ -33,12 +33,13 @@ class DomandaController extends BaseController
         $rispostaModel = new RispostaModel();
 
         $body = get_object_vars(json_decode($this->request->getBody()));
-        $domanda = array_slice($body, 0, 2);
+        $domanda = array_slice($body, 0, 3);
 
         $domandaModel->create($domanda);
         
         foreach($body["risposte"] as $obj){
             $risposta = get_object_vars($obj);
+            $risposta["id_domanda"] = $domanda["id_domanda"];
             $rispostaModel->create($risposta);
             array_push($domanda["risposte"], $risposta);
         }
@@ -59,5 +60,13 @@ class DomandaController extends BaseController
         return $this->response
             ->setStatusCode(200)
             ->setJSON($updatedData);
+    }
+
+    public function delete($id){
+        $domandaModel = new DomandaModel();
+        $domandaModel->deleteWhere($id);
+        return $this->response
+            ->setStatusCode(200);
+
     }
 }
