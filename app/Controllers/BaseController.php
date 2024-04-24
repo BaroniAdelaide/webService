@@ -55,10 +55,10 @@ abstract class BaseController extends Controller
 
         // E.g.: $this->session = \Config\Services::session();
         $this->response
-        ->setHeader("Access-Control-Allow-Origin:", "*")
-        ->appendHeader("Content-Type:", "application/json; charset=UTF-8")
-        ->appendHeader("Access-Control-Allow-Methods:", "OPTIONS,GET,POST,PUT,DELETE")
-        ->appendHeader("Access-Control-Max-Age:", "3600")
-        ->appendHeader("Access-Control-Allow-Headers:", "*");
+        ->setHeader("Access-Control-Allow-Origin", "*")
+        ->appendHeader("Content-Type", "application/json; charset=UTF-8")
+        ->appendHeader("Access-Control-Allow-Methods", "OPTIONS,GET,POST,PUT,DELETE")
+        ->appendHeader("Access-Control-Max-Age", "3600")
+        ->appendHeader("Access-Control-Allow-Headers", "*");
     }
 }
