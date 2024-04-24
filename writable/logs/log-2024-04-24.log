@@ -1,0 +1,14 @@
+CRITICAL - 2024-04-24 17:53:23 --> ArgumentCountError: Too few arguments to function CodeIgniter\HTTP\Message::appendHeader(), 1 passed in C:\xampp\htdocs\webService-2\app\Controllers\BaseController.php on line 58 and exactly 2 expected
+in SYSTEMPATH\HTTP\MessageTrait.php on line 180.
+ 1 APPPATH\Controllers\BaseController.php(58): CodeIgniter\HTTP\Message->appendHeader('Access-Control-Allow-Origin: *')
+ 2 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-24 17:54:24 --> ArgumentCountError: Too few arguments to function CodeIgniter\HTTP\Message::appendHeader(), 1 passed in C:\xampp\htdocs\webService-2\app\Controllers\BaseController.php on line 58 and exactly 2 expected
+in SYSTEMPATH\HTTP\MessageTrait.php on line 180.
+ 1 APPPATH\Controllers\BaseController.php(58): CodeIgniter\HTTP\Message->appendHeader('Access-Control-Allow-Origin: *')
+ 2 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 3 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
