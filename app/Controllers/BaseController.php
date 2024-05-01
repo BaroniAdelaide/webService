@@ -57,7 +57,6 @@ abstract class BaseController extends Controller
         header("Access-Control-Allow-Origin: *");
         header("Content-Type: *");
         header("Access-Control-Allow-Methods: *");
-        header("Access-Control-Max-Age: 3600");
         header("Access-Control-Allow-Headers: *");
     }
 }
