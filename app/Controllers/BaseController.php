@@ -54,9 +54,10 @@ abstract class BaseController extends Controller
         // Preload any models, libraries, etc, here.
 
         // E.g.: $this->session = \Config\Services::session();
-        header("Access-Control-Allow-Origin: *");
-        header("Content-Type: *");
-        header("Access-Control-Allow-Methods: *");
-        header("Access-Control-Allow-Headers: *");
+        $this->response
+        ->setHeader('Access-Control-Allow-Origin', '*')
+        ->setHeader('Content-Type', '*')
+        ->setHeader('Access-Control-Allow-Methods','*')
+        ->setHeader('Access-Control-Allow-Headers', '*');
     }
 }
