@@ -1,0 +1,270 @@
+-- --------------------------------------------------------
+-- Host:                         mysql-baroniadelaide.alwaysdata.net
+-- Versione server:              10.6.17-MariaDB - MariaDB Server
+-- S.O. server:                  Linux
+-- HeidiSQL Versione:            12.5.0.6677
+-- --------------------------------------------------------
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+
+-- Dump della struttura del database baroniadelaide_apiquiz
+CREATE DATABASE IF NOT EXISTS `baroniadelaide_apiquiz` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */;
+USE `baroniadelaide_apiquiz`;
+
+-- Dump della struttura di tabella baroniadelaide_apiquiz.domande
+CREATE TABLE IF NOT EXISTS `domande` (
+  `id_domanda` int(11) NOT NULL AUTO_INCREMENT,
+  `id_quiz` int(11) NOT NULL,
+  `domanda` varchar(255) NOT NULL,
+  `punti` int(11) NOT NULL,
+  PRIMARY KEY (`id_domanda`),
+  KEY `domande_ibfk_1` (`id_quiz`),
+  CONSTRAINT `domande_ibfk_1` FOREIGN KEY (`id_quiz`) REFERENCES `quiz` (`id_quiz`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=131 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Dump dei dati della tabella baroniadelaide_apiquiz.domande: ~40 rows (circa)
+INSERT INTO `domande` (`id_domanda`, `id_quiz`, `domanda`, `punti`) VALUES
+	(76, 36, 'Qual è il significato letterale di "Cosa Nostra"?', 10),
+	(77, 36, 'Chi è stato il boss di Cosa Nostra che fu soprannominato "Il Dottore"?', 10),
+	(78, 36, 'Qual è il soprannome di Salvatore Riina, uno dei boss più famigerati di Cosa Nostra?', 10),
+	(79, 36, 'Quale città è considerata il cuore di Cosa Nostra in Sicilia?', 10),
+	(80, 36, 'Qual è l\'etimologia del termine "mafia"?', 10),
+	(81, 36, 'Chi è stato il famoso pentito che ha fornito molte informazioni sul funzionamento di Cosa Nostra?', 10),
+	(82, 36, 'In quale periodo storico Cosa Nostra ha esteso la sua influenza negli Stati Uniti?', 10),
+	(83, 36, 'Quale famoso scandalo politico-finanziario degli anni \'90 ha rivelato legami tra politici e Cosa Nostra?', 10),
+	(84, 36, 'Qual è il nome del giudice antimafia assassinato nel 1992 in Via D\'Amelio da Cosa Nostra?', 10),
+	(85, 36, 'Qual è il termine utilizzato per indicare il pagamento periodico estorto a imprenditori e commercianti?', 10),
+	(86, 37, 'In quale anno è stata fondata la Camorra?', 10),
+	(87, 37, 'Qual è il nome della serie televisiva italiana che racconta le vicende della Camorra a Napoli?', 10),
+	(88, 37, 'Chi è stato il fondatore del clan camorristico Nuova Famiglia?', 10),
+	(89, 37, 'Qual è la zona geografica principale di influenza della Camorra?', 10),
+	(90, 37, 'Chi è stato il boss storico del Clan dei Casalesi, condannato all\'ergastolo nel 2008?', 10),
+	(91, 37, 'Chi è stato il magistrato antimafia ucciso dalla Camorra nel 1983?', 10),
+	(92, 38, 'Quale città è considerata il centro operativo della \'ndrangheta?', 10),
+	(93, 38, 'Qual è l\'attività principale della \'ndrangheta?', 10),
+	(100, 38, 'Qual è il nome della cosca più potente all\'interno della \'ndrangheta?', 10),
+	(101, 38, 'Qual è l\'origine etimologica del termine \'ndrangheta?', 10),
+	(102, 38, 'In quale decennio la \'ndrangheta ha iniziato a emergere come una potente organizzazione ', 10),
+	(103, 38, 'Quale è stato uno dei più noti omicidi attribuiti alla \'ndrangheta, avvenuto nel 1977?', 10),
+	(104, 38, 'Qual è il nome del sistema di gestione della \'ndrangheta basato su una struttura piramidale?', 10),
+	(105, 38, 'Qual è il termine calabrese utilizzato per indicare la legge del silenzio all\'interno della ', 10),
+	(106, 38, 'Qual è il termine utilizzato per indicare un affiliazione o un\'associazione alla \'ndrangheta?', 10),
+	(107, 38, 'Quale importante operazione è stata condotta nel 2010 contro la \'ndrangheta, portando all\'arresto di centinaia di membri?', 10),
+	(108, 37, 'A quale termine dovrebbe fareriferimento il nome?', 10),
+	(109, 37, 'A quale periodo storico risale la sua nascita?', 10),
+	(110, 37, 'Chi era Raffaele Cutolo?', 10),
+	(111, 37, 'A quale luogo si può fare riferimento parlando di Camorra oggi?', 10),
+	(121, 39, 'Qual è la zona con prevalente influenza?', 10),
+	(122, 39, 'A quando è possibile datare il periodo di maggiore apice?', 10),
+	(123, 39, 'Che significato ha la corona?', 10),
+	(124, 39, 'Chi è Giuseppe Rogoli?', 10),
+	(125, 39, 'Chi è Antonio Antonica?', 10),
+	(126, 39, '\'Giuro su questa punta di pugnale bagnata di sangue, di essere fedele sempre a questo corpo di società di uomini liberi, attivi e affermativi appartenenti alla Sacra corona unita e di rappresentarne ovunque il fondatore\' è una citazione a cosa?', 10),
+	(127, 39, 'Cosa si intende per \'Picciotteria\'?', 10),
+	(128, 39, 'In che anno inizò la \'faida del sud Salento\'?', 10),
+	(129, 39, 'A quanto ammonta il ricavato totale in euro (2020)?', 10),
+	(130, 39, 'Chi era Romolo Morello? ', 10);
+
+-- Dump della struttura di tabella baroniadelaide_apiquiz.quiz
+CREATE TABLE IF NOT EXISTS `quiz` (
+  `id_quiz` int(11) NOT NULL AUTO_INCREMENT,
+  `punteggio` int(11) NOT NULL,
+  `nome` varchar(50) NOT NULL,
+  `descrizione` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id_quiz`)
+) ENGINE=InnoDB AUTO_INCREMENT=42 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Dump dei dati della tabella baroniadelaide_apiquiz.quiz: ~4 rows (circa)
+INSERT INTO `quiz` (`id_quiz`, `punteggio`, `nome`, `descrizione`) VALUES
+	(36, 100, 'Cosa Nostra', 'Ha origini nella Sicilia occidentale ai primi dell’Ottocento. È una delle più potenti associazioni a delinquere in Italia, con una struttura gerarchica piramidale che va dai “soldati” o “uomini d’'),
+	(37, 200, 'Camorra', ' La Camorra è diffusa principalmente nell’area della Campania. È l’unica tra le mafie italiane ad avere origini urbane. Le bande camorriste si compongono e si scompongono facilmente, controllando diverse zone territoriali. Gli affiliati parlano spesso di '),
+	(38, 100, '\'Ndrangheta', ' La \'Ndrangheta ha radici in Calabria ed è una delle organizzazioni mafiose più potenti al mondo. La sua struttura è basata su clan familiari, e controlla il territorio attraverso estorsioni, traffico di droga e altre attività illegali.'),
+	(39, 300, 'Sacra Corona Unita', 'Questa mafia opera principalmente nella Puglia e ha legami con la Camorra e la \'Ndrangheta. Si concentra su attività come il traffico di droga e l’estorsione');
+
+-- Dump della struttura di tabella baroniadelaide_apiquiz.risposte
+CREATE TABLE IF NOT EXISTS `risposte` (
+  `id_risposta` int(11) NOT NULL AUTO_INCREMENT,
+  `id_domanda` int(11) NOT NULL,
+  `risposta` varchar(255) NOT NULL,
+  `corretta` tinyint(1) NOT NULL,
+  PRIMARY KEY (`id_risposta`),
+  KEY `risposte_ibfk_1` (`id_domanda`),
+  CONSTRAINT `risposte_ibfk_1` FOREIGN KEY (`id_domanda`) REFERENCES `domande` (`id_domanda`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=293 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- Dump dei dati della tabella baroniadelaide_apiquiz.risposte: ~160 rows (circa)
+INSERT INTO `risposte` (`id_risposta`, `id_domanda`, `risposta`, `corretta`) VALUES
+	(117, 76, 'Nostro affare', 1),
+	(118, 76, 'Nostro amico', 0),
+	(119, 76, 'Nostro territorio', 0),
+	(120, 76, 'Nostro onore', 0),
+	(121, 77, 'Salvatore Riina', 0),
+	(122, 77, 'Michele Navarra', 0),
+	(123, 77, 'Giuseppe Guttadauro', 1),
+	(124, 77, 'Tommaso Buscetta', 0),
+	(125, 78, '"Il Dottore"', 0),
+	(126, 78, '"Il Papa"', 0),
+	(127, 78, '"Il Professore"', 0),
+	(128, 78, '"La Belva"', 1),
+	(129, 79, 'Catania', 0),
+	(130, 79, 'Palermo', 1),
+	(131, 79, 'Messina', 0),
+	(132, 79, 'Trapani', 0),
+	(133, 80, 'Viene dall\'arabo "marfud", "marfuzche", che significa "impostore, malandrino"', 1),
+	(134, 80, 'Viene dal francese "ma fille", che significa "mia figlia"', 0),
+	(135, 80, 'Viene dal latino "magna fides", che significa "grande fiducia"', 0),
+	(136, 80, 'Viene dal greco "ma fia", che significa "mia moglie"', 0),
+	(137, 81, 'Tommaso Buscetta', 1),
+	(138, 81, 'Lucky Luciano', 0),
+	(139, 81, 'Al Capone', 0),
+	(140, 81, 'John Gotti', 0),
+	(141, 82, 'Durante la Proibizione', 1),
+	(142, 82, 'Durante la Guerra Fredda', 0),
+	(143, 82, 'Durante la Rivoluzione Industriale', 0),
+	(144, 82, 'Durante la Grande Depressione', 0),
+	(145, 83, 'Tangentopoli', 1),
+	(146, 83, 'Watergate', 0),
+	(147, 83, 'Caso Enron', 0),
+	(148, 83, 'Affaire Rubygate', 0),
+	(149, 84, 'Giovanni Falcone', 0),
+	(150, 84, 'Paolo Borsellino', 1),
+	(151, 84, 'Cesare Terranova', 0),
+	(152, 84, 'Rocco Chinnici', 0),
+	(153, 85, 'Pizzo', 1),
+	(154, 85, 'Pizza', 0),
+	(155, 85, 'Biscotto', 0),
+	(156, 85, 'Riscatto', 0),
+	(157, 86, '19° secolo', 0),
+	(158, 86, '17° secolo', 0),
+	(159, 86, '18° secolo', 1),
+	(160, 86, '20° secolo', 0),
+	(161, 87, '"Gomorra - La serie"', 1),
+	(162, 87, '"La Piovra"', 0),
+	(163, 87, '"Romanzo Criminale"', 0),
+	(164, 87, '"Suburra - La serie"', 0),
+	(165, 88, 'Raffaele Cutolo', 1),
+	(166, 88, 'Antonio Bardellino', 0),
+	(167, 88, 'Francesco Schiavone', 0),
+	(168, 88, 'Paolo Di Lauro', 0),
+	(169, 89, 'Campania', 1),
+	(170, 89, 'Sicilia', 0),
+	(171, 89, 'Puglia', 0),
+	(172, 89, 'Lombardia', 0),
+	(173, 90, 'Michele Zagaria', 0),
+	(174, 90, 'Antonio Bardellino', 0),
+	(175, 90, 'Francesco Schiavone', 1),
+	(176, 90, 'Pasquale Galasso', 0),
+	(177, 91, 'Paolo Borsellino', 0),
+	(178, 91, 'Giovanni Falcone', 0),
+	(179, 91, 'Cesare Terranova', 0),
+	(180, 91, 'Rocco Chinnici', 1),
+	(186, 92, 'Reggio Calabria', 1),
+	(187, 92, 'Napoli', 0),
+	(188, 92, 'Milano', 0),
+	(189, 92, 'Palermo', 0),
+	(190, 93, 'Traffico di droga', 1),
+	(191, 93, 'Traffico di armi', 0),
+	(192, 93, 'Estorsione', 0),
+	(193, 93, 'Traffico di esseri umani', 0),
+	(194, 100, 'Cosa Nostra', 0),
+	(195, 100, 'Camorra', 0),
+	(196, 100, '\'Ndrina', 1),
+	(197, 100, 'Sacra Corona Unita', 0),
+	(198, 101, 'Dal greco, "potere"', 0),
+	(199, 101, 'Dal francese, "organizzazione segreta"', 0),
+	(200, 101, 'Dal calabrese, "coraggio"', 1),
+	(201, 101, 'Dallo spagnolo, "fratellanza"', 0),
+	(202, 102, 'Anni \'50', 0),
+	(203, 102, 'Anni \'70', 1),
+	(204, 102, 'Anni \'90', 0),
+	(205, 102, 'Anni 2000', 0),
+	(206, 103, 'Omicidio Falcone', 0),
+	(207, 103, 'Omicidio Dalla Chiesa', 0),
+	(208, 103, 'Omicidio De Pedis', 1),
+	(209, 103, 'Omicidio Giuseppe Impastato', 0),
+	(210, 104, 'Cupola', 1),
+	(211, 104, 'Commissione', 0),
+	(212, 104, 'Mandamento', 0),
+	(213, 104, 'Società', 0),
+	(214, 105, 'Omertà', 1),
+	(215, 105, 'Vendetta', 0),
+	(216, 105, 'Pacchetto', 0),
+	(217, 105, 'Pizzo', 0),
+	(218, 106, 'Cosa Nostra', 0),
+	(220, 106, 'Famiglia', 0),
+	(221, 106, 'Società', 0),
+	(222, 106, '\'Ndrina', 1),
+	(223, 107, 'Operazione Alba Dorata', 0),
+	(224, 107, 'Operazione Golem', 0),
+	(225, 107, 'Operazione Strage di San Luca', 0),
+	(226, 107, 'Operazione Crimine', 1),
+	(227, 108, 'Morra', 0),
+	(228, 108, 'Mirra', 0),
+	(229, 108, 'Gamurra', 0),
+	(230, 108, 'Gomorra', 1),
+	(231, 109, 'XVI-XVII', 1),
+	(232, 109, 'XV-XVI', 0),
+	(233, 109, 'XIV-XV', 0),
+	(234, 109, 'XXI-XXII', 0),
+	(235, 110, 'Il Fondatore della Camorra', 1),
+	(236, 110, 'Un assessore', 0),
+	(237, 110, 'Un magistrato', 0),
+	(238, 110, 'Un Prete', 0),
+	(239, 111, 'Salerno', 0),
+	(240, 111, 'Caserta', 0),
+	(241, 111, 'Scampia', 1),
+	(242, 111, 'Trapani', 0),
+	(243, 121, 'Salento', 1),
+	(244, 121, 'Pianura Padana', 0),
+	(245, 121, 'Lombardia', 0),
+	(246, 121, 'Campidano', 0),
+	(247, 122, '\'70', 0),
+	(248, 122, '\'90', 0),
+	(249, 122, '\'80', 1),
+	(250, 122, '\'40', 0),
+	(251, 123, 'Potere', 0),
+	(252, 123, 'Supremazia territoriale', 0),
+	(253, 123, 'Monarchia', 0),
+	(254, 123, 'Il rosario delle processioni', 1),
+	(255, 124, 'Un Mafioso', 1),
+	(256, 124, 'Un avvocato', 0),
+	(257, 124, 'Un Magistrato', 0),
+	(258, 124, 'Un Panettiere', 0),
+	(259, 125, 'Un Panettiere', 0),
+	(260, 125, 'Un Magistrato', 1),
+	(261, 125, 'Un avvocato', 0),
+	(262, 125, 'Un Mafioso', 0),
+	(263, 126, 'L\'inno della mafia', 0),
+	(264, 126, 'La memoria del fondatore', 0),
+	(265, 126, 'Il Rito d\'Iniziazione', 1),
+	(266, 126, 'Una frase generica', 0),
+	(267, 127, 'L\'ultimo grado gerarchico', 0),
+	(268, 127, 'Il primo grado gerarchico', 1),
+	(269, 127, 'Il nome comune dei suoi associati', 0),
+	(270, 127, 'Il soprannome del fondatore', 0),
+	(271, 128, '2010', 1),
+	(272, 128, '2000', 0),
+	(273, 128, '1990', 0),
+	(274, 128, '2005', 0),
+	(275, 129, '3.5 Miliardi ', 1),
+	(276, 129, '1.5 Miliardi ', 0),
+	(277, 129, '12 Milioni', 0),
+	(288, 129, 'Non è possibile fare una stima', 0),
+	(289, 130, 'Un boss omertoso', 0),
+	(290, 130, 'Un boss che ha collaborato con la giustizia', 1),
+	(291, 130, 'Il padre dell\'attuale boss', 0),
+	(292, 130, 'Un Magistrato', 0);
+
+/*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;
