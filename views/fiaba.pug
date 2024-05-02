@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1.mt-3 #{fiaba.titolo}
+
+  div.card
+    div.card-body
+      p.card-text 
+        b Autore: 
+        span #{fiaba.autore}
+      p.card-text 
+        b Testo: 
+        span #{fiaba.fiaba}
+
